@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_handle" for="node" attr.name="handle" attr.type="string"/>
+  <key id="v_country" for="node" attr.name="country" attr.type="string"/>
+  <key id="v_region" for="node" attr.name="region" attr.type="string"/>
+  <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">player_abumakkah</data>
+      <data key="v_handle">AbuMakkah</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">player_alihanlion</data>
+      <data key="v_handle">Alihanlion</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">player_anders_vejrgang</data>
+      <data key="v_handle">Vejrgang</data>
+      <data key="v_country">DK</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">player_bonanno</data>
+      <data key="v_handle">Bonanno</data>
+      <data key="v_country">AR</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">player_chris_de_boer</data>
+      <data key="v_handle">Chris de Boer</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">player_dfernandes</data>
+      <data key="v_handle">DFernandes</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">player_emre_yilmaz</data>
+      <data key="v_handle">Emre Yilmaz</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">player_gugaferraz</data>
+      <data key="v_handle">GugaFerraz</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">player_hhezers</data>
+      <data key="v_handle">HHezerS</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">player_karimisbak</data>
+      <data key="v_handle">Karimisbak</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">player_levi_de_weerd</data>
+      <data key="v_handle">Levi de Weerd</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">player_levyfinn</data>
+      <data key="v_handle">levyfinn</data>
+      <data key="v_country">DE</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">player_luukwijdeveld</data>
+      <data key="v_handle">LuukWijdeveld</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">player_manubachoore</data>
+      <data key="v_handle">ManuBachoore</data>
+      <data key="v_country">NL</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">player_milkalove</data>
+      <data key="v_handle">Milkalove</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">player_msdossary</data>
+      <data key="v_handle">Msdossary</data>
+      <data key="v_country">SA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+    </node>
+    <node id="n16">
+      <data key="v_name">player_nassada</data>
+      <data key="v_handle">Nassada</data>
+      <data key="v_country">MA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n17">
+      <data key="v_name">player_neat</data>
+      <data key="v_handle">Neat</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n18">
+      <data key="v_name">player_nicolas99fc</data>
+      <data key="v_handle">nicolas99fc</data>
+      <data key="v_country">AR</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n19">
+      <data key="v_name">player_paulo_neto</data>
+      <data key="v_handle">Paulo Neto</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n20">
+      <data key="v_name">player_phzin</data>
+      <data key="v_handle">PHzin</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n21">
+      <data key="v_name">player_rvplegend10</data>
+      <data key="v_handle">RvPLegend10</data>
+      <data key="v_country">RO</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n22">
+      <data key="v_name">player_samugamer</data>
+      <data key="v_handle">Samugamer</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <node id="n23">
+      <data key="v_name">player_umut</data>
+      <data key="v_handle">Umut</data>
+      <data key="v_country">DE</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.fifa.com/en/articles/umut-crowned-world-champion-fifae-world-cup-2022</data>
+    </node>
+    <edge source="n17" target="n0">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n19" target="n1">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n6" target="n2">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n13" target="n2">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n8" target="n3">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n22" target="n3">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n10" target="n5">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n0" target="n8">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n3" target="n11">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n15" target="n11">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n18" target="n11">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n9" target="n14">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n4" target="n15">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n2" target="n16">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n5" target="n16">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n14" target="n18">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n12" target="n19">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n1" target="n21">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n7" target="n21">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n11" target="n21">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n16" target="n21">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n23" target="n21">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n20" target="n22">
+      <data key="e_weight">1</data>
+    </edge>
+  </graph>
+</graphml>

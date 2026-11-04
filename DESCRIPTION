@@ -1,0 +1,9 @@
+Package: fifah2h
+Title: Competitive FIFA Head-to-Head Network Research
+Version: 0.1.0
+Authors@R: person("Frank", "Williams", role = c("aut", "cre"), email = "frankiewillz1@gmail.com")
+Description: Reproducible data validation, network construction, descriptive statistics and PageRank analysis for a network science course project.
+License: file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports: igraph, jsonlite

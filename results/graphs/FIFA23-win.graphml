@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_handle" for="node" attr.name="handle" attr.type="string"/>
+  <key id="v_country" for="node" attr.name="country" attr.type="string"/>
+  <key id="v_region" for="node" attr.name="region" attr.type="string"/>
+  <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">player_manubachoore</data>
+      <data key="v_handle">ManuBachoore</data>
+      <data key="v_country">NL</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">player_mark11</data>
+      <data key="v_handle">Mark11</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">player_obrun</data>
+      <data key="v_handle">Obrun2002</data>
+      <data key="v_country">IT</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">player_phzin</data>
+      <data key="v_handle">PHzin</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+    </node>
+    <edge source="n1" target="n0">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n2" target="n0">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n3" target="n1">
+      <data key="e_weight">1</data>
+    </edge>
+  </graph>
+</graphml>

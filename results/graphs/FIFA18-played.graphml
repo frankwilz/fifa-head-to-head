@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_handle" for="node" attr.name="handle" attr.type="string"/>
+  <key id="v_country" for="node" attr.name="country" attr.type="string"/>
+  <key id="v_region" for="node" attr.name="region" attr.type="string"/>
+  <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_name">player_kurt0411</data>
+      <data key="v_handle">kurt0411</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">player_msdossary</data>
+      <data key="v_handle">Msdossary</data>
+      <data key="v_country">SA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">player_stefanopinna</data>
+      <data key="v_handle">StefanoPinna</data>
+      <data key="v_country">BE</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+    </node>
+    <edge source="n0" target="n1">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="e_weight">1</data>
+    </edge>
+  </graph>
+</graphml>

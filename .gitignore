@@ -1,0 +1,17 @@
+# Credentials and private API payloads
+.env
+.env.*
+!.env.example
+.Renviron
+.Rhistory
+.RData
+.Rproj.user/
+data/raw/api/
+data/raw/private/
+data/input/
+renv/library/
+renv/staging/
+.DS_Store
+*.log
+data/raw/esports-earnings/
+config/*.local.csv
