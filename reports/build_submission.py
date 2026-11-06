@@ -134,6 +134,8 @@ def add_table(document, block):
 def markdown(data):
     lines = ['# ' + data['title'], '', data['subtitle'] + '  ' + data['date'], '',
              'Group members: ' + ' and '.join(data['authors']), '']
+    if 'repository' in data:
+        repo=data['repository'];lines.extend(['Private repository: ['+repo['text']+']('+repo['url']+')',''])
     for page in data['pages']:
         for block in page:
             kind=block['type']
@@ -143,8 +145,9 @@ def markdown(data):
                 lines.append('| ' + ' | '.join(['---']*len(block['headers'])) + ' |')
                 for row in block['rows']: lines.append('| ' + ' | '.join(row) + ' |')
                 lines.append('')
-            elif kind=='reference':
+            elif kind in ('reference','linked_paragraph'):
                 lines.extend([''.join('['+r['text']+']('+r['url']+')' if 'url' in r else r['text'] for r in block['runs']), ''])
+            elif kind=='figure': lines.extend(['!['+block['alt']+']('+str(Path(block['path']).relative_to('reports'))+')',''])
             elif kind=='caption': lines.extend(['**'+block['text']+'**',''])
             else: lines.extend([block['text'],''])
     return '\n'.join(lines)
@@ -187,6 +190,9 @@ def main():
     authors=[a + (f' ({member_details[a]})' if a in member_details else '') for a in data['authors']]
     p=doc.add_paragraph('Group members: ' + ' and '.join(authors));p.paragraph_format.space_after=Pt(6)
     for run in p.runs:run.font.size=Pt(10.5)
+    if 'repository' in data:
+        p=doc.add_paragraph(style='Report Note');p.add_run('Private repository: ')
+        add_hyperlink(p,data['repository']['text'],data['repository']['url'])
     for page_index,page in enumerate(data['pages']):
         for block_index,block in enumerate(page):
             kind=block['type']
@@ -194,8 +200,13 @@ def main():
                 p=doc.add_paragraph(block['text'],'Heading 1' if kind=='heading' else 'Heading 2')
                 if page_index>0 and block_index==0:p.paragraph_format.page_break_before=True
             elif kind=='table':add_table(doc,block)
-            elif kind=='reference':
-                p=doc.add_paragraph(style='Reference')
+            elif kind=='figure':
+                p=doc.add_paragraph();p.alignment=WD_ALIGN_PARAGRAPH.CENTER
+                p.paragraph_format.keep_with_next=True;p.paragraph_format.space_after=Pt(2)
+                picture=p.add_run().add_picture(str(ROOT/block['path']),width=Inches(block['width']))
+                picture._inline.docPr.set('descr',block['alt'])
+            elif kind in ('reference','linked_paragraph'):
+                p=doc.add_paragraph(style='Reference' if kind=='reference' else 'Report Note')
                 for run in block['runs']:
                     add_hyperlink(p,run['text'],run['url']) if 'url' in run else p.add_run(run['text'])
             else:doc.add_paragraph(block['text'], 'Caption' if kind=='caption' else 'Report Note' if kind=='note' else 'Normal')

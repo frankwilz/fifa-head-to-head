@@ -65,3 +65,5 @@ The [timeline](docs/timeline.md) distinguishes completed infrastructure from mis
 No code reuse license has been selected; see `LICENSE`. Any future Liquipedia educational-access application must satisfy its then-current open-source and attribution conditions before collection.
 
 The submission manuscript in `reports/mid-project-report.md` is frozen to the November 6 evidence snapshot and follows the four-question, two-page assignment rubric. Pipeline runs write `reports/analysis-notes.md` so they do not overwrite the finalized manuscript. `reports/build_submission.py` creates an editable Word document using python-docx; render it to PDF for submission. The report retains sampling and earnings limitations.
+
+The submission report includes clickable repository and evidence links plus compact versions of the saved played-network and earnings figures. Regenerate the combined panel with `Rscript reports/make_progress_figure.R` before rebuilding the Word document. Full-size figures remain under `results/figures/`.

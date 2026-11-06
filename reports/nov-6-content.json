@@ -2,45 +2,255 @@
   "title": "Competitive FIFA Head to Head Network",
   "subtitle": "Network Science Progress Report",
   "date": "6 November 2026",
-  "authors": ["Frank Williams", "AbdulHaady Oludare"],
+  "authors": [
+    "Frank Williams",
+    "AbdulHaady Oludare"
+  ],
   "pages": [
     [
-      {"type":"heading", "text":"1 Work completed"},
-      {"type":"paragraph", "text":"Following the proposal's October 27 to November 5 milestone, we assembled and validated 129 competitive 1v1 fixtures involving 81 players across all nine editions from FIFA 18 to EA Sports FC 26. We built weighted directed win networks, with edges from loser to winner, and undirected played networks for each edition and the pooled sample. We calculated degree, density, connected components and weighted PageRank on the win network with damping 0.85 [1]. Clean CSV files, GraphML networks, figures and reproducible R scripts are complete."},
-      {"type":"paragraph", "text":"Because approved Liquipedia access was unavailable, we used official EA, FIFA, UEFA and Premier League results instead [2, 3]. We resolved player aliases and standardized the observation as one source-listed fixture or series, counting a multi-leg tie once. We also collected 48 career and 222 edition earnings measurements from live public profiles on November 6 [4]. These are explicitly provider-recorded totals. Data validation and repeatability checks pass in R 4.4.2 with igraph 2.2.2."},
-      {"type":"heading", "text":"2 Preliminary results"},
-      {"type":"paragraph", "text":"The pooled played network is connected and has an average of 3.01 distinct opponents per player. In the pooled directed win network, the highest PageRank players are Shellzz, RvPLegend10, Nassada, Vejrgang and Ollelito, in that order. Table 1 reports the main descriptive and RQ1 results."},
-      {"type":"caption", "text":"Table 1  Results for the observed pooled sample"},
-      {"type":"table", "widths":[4.5,2.0], "headers":["Measure", "Result"], "rows":[
-        ["Players and recorded fixtures", "81 and 129"],
-        ["Directed win links and undirected played links", "124 and 122"],
-        ["Played network density and mean degree", "0.0377 and 3.01"],
-        ["PageRank versus wins", "0.970  (n = 81)"],
-        ["PageRank versus recorded career earnings", "0.287  (n = 48)"],
-        ["All events versus world and major events", "0.976  (n = 38)"]
-      ]},
-      {"type":"note", "text":"The final three rows report Spearman rank correlations; n is the number of matched players. The sensitivity subset contains world championships and the eChampions League; ranking agreement uses only the 38 shared players."},
-      {"type":"paragraph", "text":"PageRank closely tracks win counts but has a weaker association with recorded career earnings. The world and major event subset retains 51 fixtures and excludes 43 players, including six of the full sample's top ten. Its high correlation therefore describes agreement among the retained players, rather than stability of the complete ranking. All nine edition-specific earnings comparisons also compute, but their matched samples range from 3 to 11 players. These results are exploratory and do not establish a global strongest-player ranking."}
+      {
+        "type": "heading",
+        "text": "1 Work completed"
+      },
+      {
+        "type": "paragraph",
+        "text": "We validated 129 1v1 fixtures for 81 players across FIFA 18 to EA Sports FC 26 and built pooled and per-edition weighted networks. Win links point from loser to winner; played links are undirected. We calculated degree, density, components and PageRank on the win network (damping 0.85) [1]."
+      },
+      {
+        "type": "paragraph",
+        "text": "With approved Liquipedia access unavailable, we curated official EA, FIFA, UEFA and Premier League results [2, 3]. We unified aliases and counted each source-listed multi-leg series once. We collected 48 career and 222 edition provider-recorded earnings snapshots dated November 6 [4]. Clean CSVs, GraphML exports, figures and tested, reproducible R scripts are complete."
+      },
+      {
+        "type": "heading",
+        "text": "2 Preliminary results"
+      },
+      {
+        "type": "paragraph",
+        "text": "The pooled played graph is connected (density 0.0377; mean degree 3.01). Shellzz leads PageRank on the directed win graph, followed by RvPLegend10 and Nassada. Figure 1 shows the network and the earnings comparison."
+      },
+      {
+        "type": "caption",
+        "text": "Table 1  Results for the observed pooled sample"
+      },
+      {
+        "type": "table",
+        "widths": [
+          4.5,
+          2.0
+        ],
+        "headers": [
+          "Measure",
+          "Result"
+        ],
+        "rows": [
+          [
+            "PageRank versus wins",
+            "0.970  (n = 81)"
+          ],
+          [
+            "PageRank versus recorded career earnings",
+            "0.287  (n = 48)"
+          ],
+          [
+            "All events versus world and major events",
+            "0.976  (n = 38)"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Spearman rank correlations; n counts matched players. The sensitivity subset comprises world championships and the eChampions League and uses 38 shared players."
+      },
+      {
+        "type": "paragraph",
+        "text": "Win counts agree closely with PageRank; recorded earnings show a weaker association. All nine edition earnings comparisons run (n = 3-11). Sensitivity retains 51 fixtures and excludes 43 players, including six of the full top ten; its high correlation is conditional on the retained players. These are exploratory rankings of a selected sample."
+      },
+      {
+        "type": "figure",
+        "path": "reports/figures/progress-evidence.png",
+        "width": 6.5,
+        "alt": "Two panels showing the observed played network and a scatterplot of directed win-network PageRank against provider-recorded career earnings."
+      },
+      {
+        "type": "caption",
+        "text": "Figure 1  A Played network (81 players, 122 opponent pairs); node size uses directed win-network PageRank. Layout is illustrative. B PageRank and provider-recorded career earnings (48 players; logarithmic earnings axis)."
+      }
     ],
     [
-      {"type":"heading", "text":"3 Challenges encountered"},
-      {"type":"paragraph", "text":"Coverage is uneven: the FIFA 21 ePremier League event supplies 71 of 129 fixtures (55%), while several editions contain only a few late-stage results. Domestic-event filtering also changes edition composition, so it cannot isolate a pure tournament-tier effect. We address this by reporting scope, sample sizes and sensitivity results, and by prioritizing broader event collection."},
-      {"type":"paragraph", "text":"Player aliases and incomplete provider records complicate joins. We retain source URLs and stable IDs, exclude unresolved identities, and leave absent earnings missing rather than assigning zero. Known missing prizes are not added to potentially overlapping totals. For 34 fixtures without an exact day, sourced event-end dates provide conservative cutoff bounds. Country information is available for 50 of 81 players; country flags alone do not establish competitive qualifying regions. Approved bulk access and better metadata remain data-collection bottlenecks."},
-      {"type":"heading", "text":"4 Remaining work and timeline"},
-      {"type":"paragraph", "text":"Essential outstanding work is to expand and audit match coverage, resolve remaining identities, source time-aware region and platform attributes, and complete the tournament-placement benchmark promised for RQ1. The earnings comparison is implemented, while the broader strength-ranking question remains provisional. The next stages follow the original proposal:"},
-      {"type":"table", "widths":[1.35,5.15], "headers":["Target dates", "Work to complete"], "rows":[
-        ["Nov 7-10", "Extend and audit available match data; reconcile aliases, placements and metadata. If bulk access is delayed, retain a clearly defined event cohort and its coverage limits."],
-        ["Nov 11-20", "Analyze communities and assortativity (RQ2), triads against 1,000 random-outcome simulations (RQ3), and betweenness with cross-region win rates (RQ4)."],
-        ["Nov 21-27", "Run degree, betweenness and random player-removal experiments (RQ5); prepare the final figures."],
-        ["Nov 28-Dec 2", "Write the final report and record the video presentation, ready for the December 3 presentation."]
-      ]},
-      {"type":"paragraph", "text":"Before interpreting regional structure or player strength, we will check how results change with event coverage and missing attributes. The current data and scripts provide a reproducible baseline for those analyses."},
-      {"type":"heading_small", "text":"Sources and supporting evidence"},
-      {"type":"reference", "runs":[{"text":"[1] igraph development team. "},{"text":"The Page Rank algorithm","url":"https://r.igraph.org/reference/page_rank.html"},{"text":". Implementation documentation."}]},
-      {"type":"reference", "runs":[{"text":"[2] Premier League. 2020/21 ePL results: "},{"text":"Xbox","url":"https://www.premierleague.com/en/news/2075924"},{"text":", "},{"text":"PS4","url":"https://www.premierleague.com/en/news/2076123"},{"text":" and "},{"text":"finals","url":"https://www.premierleague.com/en/news/2077050"},{"text":" (March 23, 24 and 26, 2021)."}]},
-      {"type":"reference", "runs":[{"text":"[3] EA. "},{"text":"FC Pro World Championship 26 Review","url":"https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review"},{"text":". Representative official match source."}]},
-      {"type":"reference", "runs":[{"text":"[4] Esports Earnings. Player-profile snapshots retrieved November 6, 2026; examples: "},{"text":"Vejrgang","url":"https://www.esportsearnings.com/players/111288-anders-vejrgang"},{"text":" and "},{"text":"ManuBachoore","url":"https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore"},{"text":"."}]},
-      {"type":"note", "text":"Complete source registers, cleaned data, analysis outputs and input hashes are retained in the project repository. This progress report reflects evidence available on November 6, 2026."}
+      {
+        "type": "heading",
+        "text": "3 Challenges encountered"
+      },
+      {
+        "type": "paragraph",
+        "text": "Coverage is uneven: the FIFA 21 ePremier League event supplies 71 of 129 fixtures (55%), while several editions contain only a few late-stage results. Domestic-event filtering also changes edition composition, so it cannot isolate a pure tournament-tier effect. We address this by reporting scope, sample sizes and sensitivity results, and by prioritizing broader event collection."
+      },
+      {
+        "type": "paragraph",
+        "text": "Player aliases and incomplete provider records complicate joins. We retain source URLs and stable IDs, exclude unresolved identities, and leave absent earnings missing rather than assigning zero. Known missing prizes are not added to potentially overlapping totals. For 34 fixtures without an exact day, sourced event-end dates provide conservative cutoff bounds. Country information is available for 50 of 81 players; country flags alone do not establish competitive qualifying regions. Approved bulk access and better metadata remain data-collection bottlenecks."
+      },
+      {
+        "type": "heading",
+        "text": "4 Remaining work and timeline"
+      },
+      {
+        "type": "paragraph",
+        "text": "Essential outstanding work is to expand and audit match coverage, resolve remaining identities, source time-aware region and platform attributes, and complete the tournament-placement benchmark promised for RQ1. The earnings comparison is implemented, while the broader strength-ranking question remains provisional. The next stages follow the original proposal:"
+      },
+      {
+        "type": "table",
+        "widths": [
+          1.35,
+          5.15
+        ],
+        "headers": [
+          "Target dates",
+          "Work to complete"
+        ],
+        "rows": [
+          [
+            "Nov 7-10",
+            "Extend and audit available match data; reconcile aliases, placements and metadata. If bulk access is delayed, retain a clearly defined event cohort and its coverage limits."
+          ],
+          [
+            "Nov 11-20",
+            "Analyze communities and assortativity (RQ2), triads against 1,000 random-outcome simulations (RQ3), and betweenness with cross-region win rates (RQ4)."
+          ],
+          [
+            "Nov 21-27",
+            "Run degree, betweenness and random player-removal experiments (RQ5); prepare the final figures."
+          ],
+          [
+            "Nov 28-Dec 2",
+            "Write the final report and record the video presentation, ready for the December 3 presentation."
+          ]
+        ]
+      },
+      {
+        "type": "heading_small",
+        "text": "Sources and supporting evidence"
+      },
+      {
+        "type": "reference",
+        "runs": [
+          {
+            "text": "[1] igraph development team. "
+          },
+          {
+            "text": "The Page Rank algorithm",
+            "url": "https://r.igraph.org/reference/page_rank.html"
+          },
+          {
+            "text": ". Implementation documentation."
+          }
+        ]
+      },
+      {
+        "type": "reference",
+        "runs": [
+          {
+            "text": "[2] Premier League. 2020/21 ePL results: "
+          },
+          {
+            "text": "Xbox",
+            "url": "https://www.premierleague.com/en/news/2075924"
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "PS4",
+            "url": "https://www.premierleague.com/en/news/2076123"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "finals",
+            "url": "https://www.premierleague.com/en/news/2077050"
+          },
+          {
+            "text": " (March 23, 24 and 26, 2021)."
+          }
+        ]
+      },
+      {
+        "type": "reference",
+        "runs": [
+          {
+            "text": "[3] EA. "
+          },
+          {
+            "text": "FC Pro World Championship 26 Review",
+            "url": "https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review"
+          },
+          {
+            "text": ". Representative official match source."
+          }
+        ]
+      },
+      {
+        "type": "reference",
+        "runs": [
+          {
+            "text": "[4] Esports Earnings. Player-profile snapshots retrieved November 6, 2026; examples: "
+          },
+          {
+            "text": "Vejrgang",
+            "url": "https://www.esportsearnings.com/players/111288-anders-vejrgang"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "ManuBachoore",
+            "url": "https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "linked_paragraph",
+        "runs": [
+          {
+            "text": "Repository evidence: "
+          },
+          {
+            "text": "R scripts",
+            "url": "https://github.com/frankwilz/fifa-head-to-head/tree/main/R"
+          },
+          {
+            "text": " | "
+          },
+          {
+            "text": "clean CSVs",
+            "url": "https://github.com/frankwilz/fifa-head-to-head/tree/main/data/clean"
+          },
+          {
+            "text": " | "
+          },
+          {
+            "text": "metrics and rankings",
+            "url": "https://github.com/frankwilz/fifa-head-to-head/tree/main/results"
+          },
+          {
+            "text": " | "
+          },
+          {
+            "text": "full figures",
+            "url": "https://github.com/frankwilz/fifa-head-to-head/tree/main/results/figures"
+          },
+          {
+            "text": ". The repository is private; reviewer access is required."
+          }
+        ]
+      }
     ]
-  ]
+  ],
+  "repository": {
+    "text": "github.com/frankwilz/fifa-head-to-head",
+    "url": "https://github.com/frankwilz/fifa-head-to-head"
+  }
 }

@@ -4,30 +4,33 @@ Network Science Progress Report  6 November 2026
 
 Group members: Frank Williams and AbdulHaady Oludare
 
+Private repository: [github.com/frankwilz/fifa-head-to-head](https://github.com/frankwilz/fifa-head-to-head)
+
 ## 1 Work completed
 
-Following the proposal's October 27 to November 5 milestone, we assembled and validated 129 competitive 1v1 fixtures involving 81 players across all nine editions from FIFA 18 to EA Sports FC 26. We built weighted directed win networks, with edges from loser to winner, and undirected played networks for each edition and the pooled sample. We calculated degree, density, connected components and weighted PageRank on the win network with damping 0.85 [1]. Clean CSV files, GraphML networks, figures and reproducible R scripts are complete.
+We validated 129 1v1 fixtures for 81 players across FIFA 18 to EA Sports FC 26 and built pooled and per-edition weighted networks. Win links point from loser to winner; played links are undirected. We calculated degree, density, components and PageRank on the win network (damping 0.85) [1].
 
-Because approved Liquipedia access was unavailable, we used official EA, FIFA, UEFA and Premier League results instead [2, 3]. We resolved player aliases and standardized the observation as one source-listed fixture or series, counting a multi-leg tie once. We also collected 48 career and 222 edition earnings measurements from live public profiles on November 6 [4]. These are explicitly provider-recorded totals. Data validation and repeatability checks pass in R 4.4.2 with igraph 2.2.2.
+With approved Liquipedia access unavailable, we curated official EA, FIFA, UEFA and Premier League results [2, 3]. We unified aliases and counted each source-listed multi-leg series once. We collected 48 career and 222 edition provider-recorded earnings snapshots dated November 6 [4]. Clean CSVs, GraphML exports, figures and tested, reproducible R scripts are complete.
 
 ## 2 Preliminary results
 
-The pooled played network is connected and has an average of 3.01 distinct opponents per player. In the pooled directed win network, the highest PageRank players are Shellzz, RvPLegend10, Nassada, Vejrgang and Ollelito, in that order. Table 1 reports the main descriptive and RQ1 results.
+The pooled played graph is connected (density 0.0377; mean degree 3.01). Shellzz leads PageRank on the directed win graph, followed by RvPLegend10 and Nassada. Figure 1 shows the network and the earnings comparison.
 
 **Table 1  Results for the observed pooled sample**
 
 | Measure | Result |
 | --- | --- |
-| Players and recorded fixtures | 81 and 129 |
-| Directed win links and undirected played links | 124 and 122 |
-| Played network density and mean degree | 0.0377 and 3.01 |
 | PageRank versus wins | 0.970  (n = 81) |
 | PageRank versus recorded career earnings | 0.287  (n = 48) |
 | All events versus world and major events | 0.976  (n = 38) |
 
-The final three rows report Spearman rank correlations; n is the number of matched players. The sensitivity subset contains world championships and the eChampions League; ranking agreement uses only the 38 shared players.
+Spearman rank correlations; n counts matched players. The sensitivity subset comprises world championships and the eChampions League and uses 38 shared players.
 
-PageRank closely tracks win counts but has a weaker association with recorded career earnings. The world and major event subset retains 51 fixtures and excludes 43 players, including six of the full sample's top ten. Its high correlation therefore describes agreement among the retained players, rather than stability of the complete ranking. All nine edition-specific earnings comparisons also compute, but their matched samples range from 3 to 11 players. These results are exploratory and do not establish a global strongest-player ranking.
+Win counts agree closely with PageRank; recorded earnings show a weaker association. All nine edition earnings comparisons run (n = 3-11). Sensitivity retains 51 fixtures and excludes 43 players, including six of the full top ten; its high correlation is conditional on the retained players. These are exploratory rankings of a selected sample.
+
+![Two panels showing the observed played network and a scatterplot of directed win-network PageRank against provider-recorded career earnings.](figures/progress-evidence.png)
+
+**Figure 1  A Played network (81 players, 122 opponent pairs); node size uses directed win-network PageRank. Layout is illustrative. B PageRank and provider-recorded career earnings (48 players; logarithmic earnings axis).**
 
 ## 3 Challenges encountered
 
@@ -46,8 +49,6 @@ Essential outstanding work is to expand and audit match coverage, resolve remain
 | Nov 21-27 | Run degree, betweenness and random player-removal experiments (RQ5); prepare the final figures. |
 | Nov 28-Dec 2 | Write the final report and record the video presentation, ready for the December 3 presentation. |
 
-Before interpreting regional structure or player strength, we will check how results change with event coverage and missing attributes. The current data and scripts provide a reproducible baseline for those analyses.
-
 ## Sources and supporting evidence
 
 [1] igraph development team. [The Page Rank algorithm](https://r.igraph.org/reference/page_rank.html). Implementation documentation.
@@ -58,4 +59,4 @@ Before interpreting regional structure or player strength, we will check how res
 
 [4] Esports Earnings. Player-profile snapshots retrieved November 6, 2026; examples: [Vejrgang](https://www.esportsearnings.com/players/111288-anders-vejrgang) and [ManuBachoore](https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore).
 
-Complete source registers, cleaned data, analysis outputs and input hashes are retained in the project repository. This progress report reflects evidence available on November 6, 2026.
+Repository evidence: [R scripts](https://github.com/frankwilz/fifa-head-to-head/tree/main/R) | [clean CSVs](https://github.com/frankwilz/fifa-head-to-head/tree/main/data/clean) | [metrics and rankings](https://github.com/frankwilz/fifa-head-to-head/tree/main/results) | [full figures](https://github.com/frankwilz/fifa-head-to-head/tree/main/results/figures). The repository is private; reviewer access is required.
