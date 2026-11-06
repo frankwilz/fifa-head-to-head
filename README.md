@@ -1,6 +1,6 @@
 # Who Really Beats Whom
 
-A reproducible R project for the head-to-head network of competitive FIFA / EA Sports FC players. The current milestone is **November 6, 2026**: clean data, build win/played networks, describe the network, and address PageRank ranking (RQ1). The mid-project report is due November 6.
+A reproducible R project for the head-to-head network of competitive FIFA / EA Sports FC players. The current milestone is **November 6, 2026**: clean data, build win/played networks, describe the network, and address PageRank ranking (RQ1). The two-page progress report is dated November 6.
 
 **Current evidence:** 129 verified fixtures and 81 players across all 9 editions. Live, explicitly provider-recorded career and edition earnings now support RQ1 comparisons, and 51 world/major versus 78 domestic fixtures support a sensitivity run. Sampling and earnings coverage remain incomplete. See [coverage](docs/data-coverage.md), [the report](reports/mid-project-report.md), and [availability](results/availability.csv).
 
@@ -56,10 +56,12 @@ This prints the earnings request plan without reading credentials or accessing t
 | `data/examples/` | Empty canonical schema templates |
 | `config/` | Cutoff, editions, major-tier definitions, example API jobs |
 | `results/` | Saved tables, graphs, figures, and environment manifest |
-| `reports/` | Generated November 6 mid-project report draft |
+| `reports/` | Final two-page progress report and generated analysis notes |
 | `docs/` | Data dictionary, sources/coverage, access instructions, timeline |
 | `tests/` | Meaningful validation, graph, ranking, and mocked API checks |
 
 The [timeline](docs/timeline.md) distinguishes completed infrastructure from missing empirical work. All nine editions have observations, and career/edition earnings joins now run. Full historical coverage, unresolved identities, placement comparisons and competitive-region attributes remain work to complete. RQ2–RQ4 are scheduled November 7–20, RQ5 November 21–27, and final writing/video November 28–December 2. No submission, application or collaborator message was sent.
 
 No code reuse license has been selected; see `LICENSE`. Any future Liquipedia educational-access application must satisfy its then-current open-source and attribution conditions before collection.
+
+The submission manuscript in `reports/mid-project-report.md` is frozen to the November 6 evidence snapshot and follows the four-question, two-page assignment rubric. Pipeline runs write `reports/analysis-notes.md` so they do not overwrite the finalized manuscript. `reports/build_submission.py` creates an editable Word document using python-docx; render it to PDF for submission. The report retains sampling and earnings limitations.

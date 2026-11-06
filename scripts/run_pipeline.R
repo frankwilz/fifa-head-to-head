@@ -16,7 +16,7 @@ input_dir <- value("--input-dir","")
 public <- !nzchar(input_dir)
 base_dir <- value("--output-dir",if (public) "." else "data/input/analysis")
 out <- file.path(base_dir,"results"); clean <- file.path(base_dir,"data","clean")
-report <- file.path(base_dir,"reports","mid-project-report.md")
+report <- file.path(base_dir,"reports","analysis-notes.md")
 dir.create(out,recursive=TRUE,showWarnings=FALSE);dir.create(clean,recursive=TRUE,showWarnings=FALSE)
 if (public) {
   paths <- file.path("data/raw",c("public_matches.csv","public_players.csv","public_earnings.csv"))
@@ -64,11 +64,11 @@ utils::write.csv(data.frame(status=sensitivity_status),file.path(major_dir,"stat
 availability <- coverage_summary(inputs,a,project_config$editions)
 utils::write.csv(availability,file.path(out,"availability.csv"),row.names=FALSE,na="")
 write_figures(a,file.path(out,"figures"))
-write_midproject_report(a,inputs,cutoff,project_config$editions,report,
+write_analysis_notes(a,inputs,cutoff,project_config$editions,report,
   if (public) "checked-in public cohort" else "user-supplied canonical CSVs",sensitivity_status,availability)
 manifest <- data.frame(key=c("cutoff","input_mode","R","igraph","jsonlite",paste0("md5:",basename(paths))),
   value=c(as.character(cutoff),if(public)"public" else "custom",R.version.string,
     as.character(packageVersion("igraph")),as.character(packageVersion("jsonlite")),unname(tools::md5sum(paths))))
 utils::write.csv(manifest,file.path(out,"run-manifest.csv"),row.names=FALSE)
 writeLines(sub("[[:space:]]+$","",capture.output(sessionInfo())),file.path(out,"session-info.txt"))
-cat("Validated ",nrow(inputs$matches)," matches; generated ",nrow(a$metrics)," network scopes.\nReport: ",report,"\n",sep="")
+cat("Validated ",nrow(inputs$matches)," matches; generated ",nrow(a$metrics)," network scopes.\nAnalysis notes: ",report,"\n",sep="")

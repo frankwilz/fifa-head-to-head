@@ -1,163 +1,61 @@
-# Who Really Beats Whom: mid-project report
+# Competitive FIFA Head to Head Network
 
-Evidence cutoff: **2026-11-06** (America/Vancouver). Report due **November 6, 2026**. Research draft; not submitted.
+Network Science Progress Report  6 November 2026
 
-## Results and current status
+Group members: Frank Williams and AbdulHaady Oludare
 
-The R workflow validates 129 source-backed head-to-head fixtures involving 81 players across 9 of 9 proposed editions. Input: checked-in public cohort. Official world, continental and domestic events are represented. All editions having observations does not imply complete historical coverage.
+## 1 Work completed
 
-Within the observed combined network, **Shellzz** has the largest weighted PageRank. This is a sample-dependent ranking, affected by event selection, bracket progression and unequal coverage across editions; it cannot establish the strongest professional globally.
+Following the proposal's October 27 to November 5 milestone, we assembled and validated 129 competitive 1v1 fixtures involving 81 players across all nine editions from FIFA 18 to EA Sports FC 26. We built weighted directed win networks, with edges from loser to winner, and undirected played networks for each edition and the pooled sample. We calculated degree, density, connected components and weighted PageRank on the win network with damping 0.85 [1]. Clean CSV files, GraphML networks, figures and reproducible R scripts are complete.
 
-RQ1's combined comparison with provider-recorded career earnings now computes: **Spearman rho = 0.2871**, using **48 matched players**. Provider totals are incomplete observations, not verified complete actual career earnings. The per-edition comparison statuses are reported below.
+Because approved Liquipedia access was unavailable, we used official EA, FIFA, UEFA and Premier League results instead [2, 3]. We resolved player aliases and standardized the observation as one source-listed fixture or series, counting a multi-leg tie once. We also collected 48 career and 222 edition earnings measurements from live public profiles on November 6 [4]. These are explicitly provider-recorded totals. Data validation and repeatability checks pass in R 4.4.2 with igraph 2.2.2.
 
-## Availability and data quality
+## 2 Preliminary results
 
-| feature | status | evidence |
-| --- | --- | --- |
-| edition_observations | available | 9/9 editions represented; not complete populations |
-| career_earnings_comparison | available | 48 matched players; provider-recorded totals |
-| edition_earnings_comparisons | available | 9/9 edition comparisons have >=3 nonconstant matched pairs |
-| event_scope_sensitivity | available | 51 world/major and 78 domestic fixtures; research classification |
-| country_attributes | partial | 50/81 active players with sourced country codes |
-| exact_match_dates | partial | 95/129 exact days; remaining event-end bounds preserved |
-| full_historical_corpus | partial | Selective official-event cohort; all editions represented does not imply complete coverage |
-| LPDB_live_collection | requires_approved_access | Offline approved-export path and earnings normalization work; no Liquipedia credential supplied |
+The pooled played network is connected and has an average of 3.01 distinct opponents per player. In the pooled directed win network, the highest PageRank players are Shellzz, RvPLegend10, Nassada, Vejrgang and Ollelito, in that order. Table 1 reports the main descriptive and RQ1 results.
 
-| game_edition | matches |
+**Table 1  Results for the observed pooled sample**
+
+| Measure | Result |
 | --- | --- |
-| FIFA18 | 2 |
-| FIFA19 | 2 |
-| FIFA20 | 7 |
-| FIFA21 | 71 |
-| FIFA22 | 3 |
-| FIFA23 | 3 |
-| FC24 | 7 |
-| FC25 | 11 |
-| FC26 | 23 |
+| Players and recorded fixtures | 81 and 129 |
+| Directed win links and undirected played links | 124 and 122 |
+| Played network density and mean degree | 0.0377 and 3.01 |
+| PageRank versus wins | 0.970  (n = 81) |
+| PageRank versus recorded career earnings | 0.287  (n = 48) |
+| All events versus world and major events | 0.976  (n = 38) |
 
-The input includes 48 career and 222 edition earnings snapshots. Of the combined network's 81 players, 48 have matched career measurements. Unlisted player/game observations remain missing, never zero. 34 fixtures retain unknown exact match days and use sourced event-end bounds only for cutoff eligibility.
+The final three rows report Spearman rank correlations; n is the number of matched players. The sensitivity subset contains world championships and the eChampions League; ranking agreement uses only the 38 shared players.
 
-Validation recorded 0 errors, 0 exclusion notices and 34 uncertainty warnings. Counts refer to notices rather than necessarily distinct rows. Clean CSVs preserve IDs and sources; results/quality-issues.csv records the notices.
+PageRank closely tracks win counts but has a weaker association with recorded career earnings. The world and major event subset retains 51 fixtures and excludes 43 players, including six of the full sample's top ten. Its high correlation therefore describes agreement among the retained players, rather than stability of the complete ranking. All nine edition-specific earnings comparisons also compute, but their matched samples range from 3 to 11 players. These results are exploratory and do not establish a global strongest-player ranking.
 
-The earnings estimand is now explicitly the amount the provider reports at retrieval. Earlier exclusions treated incomplete profiles as unusable for any comparison. That was unnecessarily restrictive for a comparison with provider-recorded totals. The revised analysis does not claim that missing tournaments have been repaired, add known prizes onto potentially overlapping totals, or backdate November 6 observations into the November 4 snapshot. See docs/earnings-provenance.md for retrieval evidence, aliases and identity exclusions.
+## 3 Challenges encountered
 
-## Network construction and descriptive metrics
+Coverage is uneven: the FIFA 21 ePremier League event supplies 71 of 129 fixtures (55%), while several editions contain only a few late-stage results. Domestic-event filtering also changes edition composition, so it cannot isolate a pure tournament-tier effect. We address this by reporting scope, sample sizes and sensitivity results, and by prioritizing broader event collection.
 
-One completed source-listed 1v1 bracket fixture or series contributes one played-edge unit; historical multi-leg ties count once as aggregate series. A decisive fixture creates a loser-to-winner edge. Repeated opponents accumulate edge weight. Completed draws enter the played network only. Penalty winners are explicit; shootout scores are not goal totals. Only participating players enter a scope. Combined and edition networks are exported as GraphML and edge CSVs.
+Player aliases and incomplete provider records complicate joins. We retain source URLs and stable IDs, exclude unresolved identities, and leave absent earnings missing rather than assigning zero. Known missing prizes are not added to potentially overlapping totals. For 34 fixtures without an exact day, sourced event-end dates provide conservative cutoff bounds. Country information is available for 50 of 81 players; country flags alone do not establish competitive qualifying regions. Approved bulk access and better metadata remain data-collection bottlenecks.
 
-| scope | nodes | matches | win_edges | played_edges | density_played | mean_degree_played | components_played | giant_component_fraction |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| combined | 81 | 129 | 124 | 122 | 0.0377 | 3.0123 | 1 | 1 |
-| FC24 | 8 | 7 | 7 | 7 | 0.2500 | 1.7500 | 1 | 1 |
-| FC25 | 12 | 11 | 11 | 11 | 0.1667 | 1.8333 | 1 | 1 |
-| FC26 | 24 | 23 | 23 | 23 | 0.0833 | 1.9167 | 1 | 1 |
-| FIFA18 | 3 | 2 | 2 | 2 | 0.6667 | 1.3333 | 1 | 1 |
-| FIFA19 | 3 | 2 | 2 | 2 | 0.6667 | 1.3333 | 1 | 1 |
-| FIFA20 | 8 | 7 | 7 | 7 | 0.2500 | 1.7500 | 1 | 1 |
-| FIFA21 | 40 | 71 | 67 | 65 | 0.0833 | 3.2500 | 1 | 1 |
-| FIFA22 | 4 | 3 | 3 | 3 | 0.5000 | 1.5000 | 1 | 1 |
-| FIFA23 | 4 | 3 | 3 | 3 | 0.5000 | 1.5000 | 1 | 1 |
+## 4 Remaining work and timeline
 
-In-degree counts distinct opponents beaten, incoming strength counts won fixtures, played degree counts distinct opponents, and played strength counts fixtures. Low degree can reflect knockout format and omitted stages; it does not alone demonstrate regional isolation.
+Essential outstanding work is to expand and audit match coverage, resolve remaining identities, source time-aware region and platform attributes, and complete the tournament-placement benchmark promised for RQ1. The earnings comparison is implemented, while the broader strength-ranking question remains provisional. The next stages follow the original proposal:
 
-## RQ1: rankings and recorded earnings
+| Target dates | Work to complete |
+| --- | --- |
+| Nov 7-10 | Extend and audit available match data; reconcile aliases, placements and metadata. If bulk access is delayed, retain a clearly defined event cohort and its coverage limits. |
+| Nov 11-20 | Analyze communities and assortativity (RQ2), triads against 1,000 random-outcome simulations (RQ3), and betweenness with cross-region win rates (RQ4). |
+| Nov 21-27 | Run degree, betweenness and random player-removal experiments (RQ5); prepare the final figures. |
+| Nov 28-Dec 2 | Write the final report and record the video presentation, ready for the December 3 presentation. |
 
-Weighted PageRank uses damping 0.85. Average ranks handle ties after scores are rounded to 12 significant digits for ranking/correlation only; raw PageRank is retained. Negative rank gaps indicate a better PageRank position than the comparison rank. Earnings rank gaps use the identical matched player subset. Combined graphs use career totals; edition graphs use only the corresponding game's reported totals. Each snapshot must be dated no later than the cutoff.
+Before interpreting regional structure or player strength, we will check how results change with event coverage and missing attributes. The current data and scripts provide a reproducible baseline for those analyses.
 
-| handle | pagerank_rank | pagerank | wins | losses | opponents |
-| --- | --- | --- | --- | --- | --- |
-| Shellzz | 1 | 0.0995 | 6 | 0 | 6 |
-| RvPLegend10 | 2 | 0.0806 | 5 | 0 | 5 |
-| Nassada | 3 | 0.0511 | 2 | 1 | 3 |
-| Vejrgang | 4 | 0.0482 | 5 | 1 | 6 |
-| Ollelito | 5 | 0.0472 | 5 | 1 | 6 |
-| Mhaywxrd | 6 | 0.0427 | 4 | 1 | 5 |
-| Tom Leese | 7 | 0.0319 | 6 | 1 | 6 |
-| ManuBachoore | 8 | 0.0309 | 5 | 1 | 6 |
-| MarcMarleyyy | 9 | 0.0271 | 6 | 3 | 7 |
-| Diogo Mendes | 10 | 0.0209 | 4 | 1 | 5 |
+## Sources and supporting evidence
 
-| scope | comparison | n_complete | spearman_rho | status |
-| --- | --- | --- | --- | --- |
-| combined | pagerank_vs_wins | 81 | 0.9700 | computed |
-| combined | pagerank_vs_earnings | 48 | 0.2871 | computed |
-| FC24 | pagerank_vs_wins | 8 | 1.0000 | computed |
-| FC24 | pagerank_vs_earnings | 7 | 0.4335 | computed |
-| FC25 | pagerank_vs_wins | 12 | 0.9920 | computed |
-| FC25 | pagerank_vs_earnings | 11 | -0.1151 | computed |
-| FC26 | pagerank_vs_wins | 24 | 0.9795 | computed |
-| FC26 | pagerank_vs_earnings | 4 | -0.3162 | computed |
-| FIFA18 | pagerank_vs_wins | 3 | 1.0000 | computed |
-| FIFA18 | pagerank_vs_earnings | 3 | 0.8660 | computed |
-| FIFA19 | pagerank_vs_wins | 3 | 1.0000 | computed |
-| FIFA19 | pagerank_vs_earnings | 3 | 0.8660 | computed |
-| FIFA20 | pagerank_vs_wins | 8 | 1.0000 | computed |
-| FIFA20 | pagerank_vs_earnings | 4 | 0.7379 | computed |
-| FIFA21 | pagerank_vs_wins | 40 | 0.9728 | computed |
-| FIFA21 | pagerank_vs_earnings | 10 | 0.5030 | computed |
-| FIFA22 | pagerank_vs_wins | 4 | 0.7778 | computed |
-| FIFA22 | pagerank_vs_earnings | 4 | 0.9487 | computed |
-| FIFA23 | pagerank_vs_wins | 4 | 1.0000 | computed |
-| FIFA23 | pagerank_vs_earnings | 4 | 0.6325 | computed |
+[1] igraph development team. [The Page Rank algorithm](https://r.igraph.org/reference/page_rank.html). Implementation documentation.
 
-Largest absolute differences between PageRank and provider-recorded career-earnings ranks (within the matched subset):
+[2] Premier League. 2020/21 ePL results: [Xbox](https://www.premierleague.com/en/news/2075924), [PS4](https://www.premierleague.com/en/news/2076123) and [finals](https://www.premierleague.com/en/news/2077050) (March 23, 24 and 26, 2021).
 
-| handle | earnings_usd | pagerank_rank_earnings_subset | earnings_rank | pagerank_minus_earnings_rank |
-| --- | --- | --- | --- | --- |
-| PHzin | 635235.02 | 41 | 6 | 35 |
-| RvPLegend10 | 89762.63 | 2 | 35 | -33 |
-| Neat | 408545.17 | 41 | 9 | 32 |
-| Gorilla | 404021.96 | 41 | 11 | 30 |
-| Brice | 34765.66 | 13 | 42 | -29 |
-| Emre Yilmaz | 397149.98 | 41 | 12 | 29 |
-| Obrun2002 | 310295.46 | 41 | 16 | 25 |
-| Shellzz | 150258.94 | 1 | 26 | -25 |
-| Samugamer | 2000.00 | 24 | 48 | -24 |
-| Diogo Mendes | 129640.49 | 7 | 29 | -22 |
+[3] EA. [FC Pro World Championship 26 Review](https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review). Representative official match source.
 
-Career totals may include games or competition formats absent from this 1v1 network. Provider pages omit known tournaments, and players with recorded earnings are not a random subset. Edition totals are separate measurements and absent game rows are not inferred as zero. Correlations describe the observed data; no causal interpretation or statistical-significance claim is made.
+[4] Esports Earnings. Player-profile snapshots retrieved November 6, 2026; examples: [Vejrgang](https://www.esportsearnings.com/players/111288-anders-vejrgang) and [ManuBachoore](https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore).
 
-## Event-scope sensitivity and random reference graphs
-
-Event-scope sensitivity: World/major subset exported with common-player rank comparisons (51 of 129 fixtures retained).
-
-`research_event_scope_v1` classifies world championships as world, the international eChampions League as major, and domestic ePremier League events as regional. These are research categories, not official or Liquipedia tier labels. The world/major subset, full-sample comparison ranks and correlations are exported under results/major-tier-sensitivity/. Rank changes are calculated on the same shared players, so simply removing players does not mechanically improve everyone else's comparison rank. Since domestic records are concentrated in FIFA20/21, this sensitivity also changes edition coverage; it cannot isolate a pure tournament-tier effect. Small cups and open qualifiers remain underrepresented.
-
-For each scope, 100 seeded undirected G(n,m) graphs retain the observed player and played-edge counts. Density and mean degree match by construction, so comparison uses giant-component fraction and global transitivity. Simulation 2.5%–97.5% intervals are null-model reference ranges, not population confidence intervals. Undefined transitivity is retained as undefined, with finite replicate counts exported.
-
-| scope | observed_giant_fraction | random_giant_mean | random_giant_q025 | random_giant_q975 | observed_transitivity | random_transitivity_mean |
-| --- | --- | --- | --- | --- | --- | --- |
-| combined | 1 | 0.9538 | 0.9071 | 0.9877 | 0.1517 | 0.0377 |
-| FC24 | 1 | 0.8638 | 0.6250 | 1.0000 | 0.0000 | 0.1625 |
-| FC25 | 1 | 0.8192 | 0.5833 | 0.9604 | 0.0000 | 0.1524 |
-| FC26 | 1 | 0.7904 | 0.6250 | 0.9167 | 0.0000 | 0.0605 |
-| FIFA18 | 1 | 1.0000 | 1.0000 | 1.0000 | 0.0000 | 0.0000 |
-| FIFA19 | 1 | 1.0000 | 1.0000 | 1.0000 | 0.0000 | 0.0000 |
-| FIFA20 | 1 | 0.8538 | 0.6250 | 1.0000 | 0.0000 | 0.1725 |
-| FIFA21 | 1 | 0.9638 | 0.9000 | 1.0000 | 0.2601 | 0.0820 |
-| FIFA22 | 1 | 0.9600 | 0.7500 | 1.0000 | 0.0000 | 0.1600 |
-| FIFA23 | 1 | 0.9400 | 0.7500 | 1.0000 | 0.0000 | 0.2400 |
-
-## Figures and reproducibility
-
-Run `Rscript scripts/run_pipeline.R` from the repository root and `Rscript scripts/test.R` for checks. The default run is offline. API cache normalization is executable through scripts/normalize_earnings.R; live earnings requests still require a local key. Approved Liquipedia exports can use the canonical CSV path. results/run-manifest.csv records the cutoff, input hashes and dependency versions; results/session-info.txt records the R environment.
-
-![Leading PageRank scores](../results/figures/pagerank-top10.png)
-
-![PageRank and recorded career earnings](../results/figures/pagerank-vs-earnings.png)
-
-![Observed played network](../results/figures/played-network.png)
-
-![Opponent-degree distribution](../results/figures/degree-distribution.png)
-
-## Remaining work
-
-Broader event collection and identity audits remain necessary for global conclusions. Platform and country provenance have been improved, but competitive qualifying region must be sourced separately; a country flag is not proof of a player's circuit region. Tournament-placement comparisons are not implemented yet. API access credentials and an approved LPDB schema remain external prerequisites for large-scale collection, not for reproducing the checked-in results.
-
-The November 6 deliverable contains descriptive analysis and RQ1 results with explicit sampling limits. November 7–20 covers communities/assortativity (RQ2), triads (RQ3) and bridges (RQ4); November 21–27 covers robustness (RQ5); November 28–December 2 covers the final report and video, for the December 3 presentation. No submission or access application was sent.
-
-## Sources
-
-Match evidence: data/raw/sources.csv, data/raw/match_sources_expansion.csv and docs/match-expansion.md. Earnings snapshots and identity decisions: data/raw/earnings_sources.csv and docs/earnings-provenance.md. Event classifications and platform sources: data/raw/tournaments.csv. These registers link the official competition reports and provider profiles used by each record.
-
-Methods and access documentation: [igraph PageRank](https://r.igraph.org/reference/page_rank.html), [Esports Earnings API](https://www.esportsearnings.com/apidocs), [Liquipedia API](https://liquipedia.net/api) and [API terms](https://liquipedia.net/api-terms-of-use).
+Complete source registers, cleaned data, analysis outputs and input hashes are retained in the project repository. This progress report reflects evidence available on November 6, 2026.

@@ -15,7 +15,7 @@ markdown_table <- function(x, digits=4) {
           apply(y, 1, function(v) paste0("| ", paste(v, collapse=" | "), " |"))), collapse="\n")
 }
 
-write_midproject_report <- function(a, inputs, cutoff, editions, report_path, input_label, sensitivity_status, availability) {
+write_analysis_notes <- function(a, inputs, cutoff, editions, report_path, input_label, sensitivity_status, availability) {
   m <- a$metrics; r <- a$rankings; cohort <- r[r$scope=="combined",,drop=FALSE]
   top <- leading_rankings(cohort)[,c("handle","pagerank_rank","pagerank","wins","losses","opponents")]
   coverage <- data.frame(game_edition=editions,
@@ -26,7 +26,7 @@ write_midproject_report <- function(a, inputs, cutoff, editions, report_path, in
   money <- a$correlations[a$correlations$scope=="combined" & a$correlations$comparison=="pagerank_vs_earnings",,drop=FALSE]
   best <- cohort$handle[which.min(cohort$pagerank_rank)]
   text <- c(
-    "# Who Really Beats Whom: mid-project report", "",
+    "# Competitive FIFA analysis notes", "",
     paste0("Evidence cutoff: **",cutoff,"** (America/Vancouver). Report due **November 6, 2026**. Research draft; not submitted."), "",
     "## Results and current status", "",
     paste0("The R workflow validates ",nrow(inputs$matches)," source-backed head-to-head fixtures involving ",nrow(cohort)," players across ",sum(coverage$matches>0)," of ",length(editions)," proposed editions. Input: ",input_label,". Official world, continental and domestic events are represented. All editions having observations does not imply complete historical coverage."), "",
