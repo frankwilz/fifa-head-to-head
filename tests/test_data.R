@@ -5,7 +5,7 @@ p <- read_project_csv("data/raw/public_players.csv", names(read.csv("data/exampl
 e <- read_project_csv("data/raw/public_earnings.csv", names(read.csv("data/examples/earnings.csv")))
 check <- function(mm=m, pp=p, ee=e) validate_inputs(mm, pp, ee, project_config$cutoff, project_config$editions)
 x <- check()
-stopifnot(!x$has_errors, nrow(x$matches)==nrow(m), nrow(x$earnings)==0)
+stopifnot(!x$has_errors, nrow(x$matches)==nrow(m), nrow(x$earnings)==nrow(e))
 bad <- m; bad$winner_id[1] <- "unlisted"; stopifnot(check(bad)$has_errors)
 bad <- m; bad$match_id[2] <- bad$match_id[1]; stopifnot(check(bad)$has_errors)
 bad <- m; bad$date[1] <- "2024-02-31"; stopifnot(check(bad)$has_errors)
@@ -13,7 +13,7 @@ bad <- m; bad$score1[1] <- "0"; stopifnot(check(bad)$has_errors)
 bad <- m; bad$player1_id[1] <- "unknown"; stopifnot(check(bad)$has_errors)
 bad <- m; bad$winner_id[1] <- NA; x <- check(bad)
 stopifnot(!x$has_errors, nrow(x$matches)==nrow(m)-1, any(x$issues$severity=="excluded"))
-bad <- m; bad$date[1] <- "2026-11-05"; bad$event_end_date[1] <- "2026-11-05"; x <- check(bad)
+bad <- m; bad$date[1] <- as.character(project_config$cutoff+1L); bad$event_end_date[1] <- as.character(project_config$cutoff+1L); x <- check(bad)
 stopifnot(!x$has_errors, nrow(x$matches)==nrow(m)-1)
 penalty <- m[m$decision=="penalties",,drop=FALSE]
 stopifnot(nrow(penalty)>=1, !check(penalty)$has_errors)
@@ -24,7 +24,7 @@ bad <- m; bad$date_precision[1] <- "event_end"; stopifnot(check(bad)$has_errors)
 bad <- m; bad$date[1] <- NA; bad$event_end_date[1] <- NA; stopifnot(check(bad)$has_errors)
 bad <- m; bad$date[1] <- "2024-07-13junk"; stopifnot(check(bad)$has_errors)
 bad <- m; bad$event_end_date[1] <- "2024-07-12"; stopifnot(check(bad)$has_errors)
-bad <- m; bad$date[1] <- NA; bad$event_end_date[1] <- "2026-11-05"; bad$date_precision[1] <- "event_end"
+bad <- m; bad$date[1] <- NA; bad$event_end_date[1] <- as.character(project_config$cutoff+1L); bad$date_precision[1] <- "event_end"
 x <- check(bad); stopifnot(!x$has_errors, nrow(x$matches)==nrow(m)-1, !anyNA(x$matches$match_id))
 bad <- m; bad$score1[1] <- "Inf"; stopifnot(check(bad)$has_errors)
 bad <- m; bad$score1[1] <- "-1"; stopifnot(check(bad)$has_errors)
@@ -36,7 +36,7 @@ single_earnings <- data.frame(player_id=p$player_id[1], scope="career", game_edi
   earnings_usd="0", as_of="2026-11-04", source_url="https://www.esportsearnings.com/players/123-example",
   stringsAsFactors=FALSE)
 x <- check(ee=single_earnings); stopifnot(!x$has_errors, identical(x$earnings$earnings_usd,0))
-bad <- single_earnings; bad$as_of <- "2026-11-05"
+bad <- single_earnings; bad$as_of <- as.character(project_config$cutoff+1L)
 x <- check(ee=bad); stopifnot(!x$has_errors, nrow(x$earnings)==0, !anyNA(x$matches$match_id))
 bad <- single_earnings; bad$as_of <- "2026-02-30"; stopifnot(check(ee=bad)$has_errors)
 bad <- single_earnings; bad$as_of <- NA; stopifnot(check(ee=bad)$has_errors)
@@ -61,7 +61,7 @@ stopifnot(!check(unknown_draw)$has_errors, nrow(check(unknown_draw)$matches)==1)
 bad <- draw; bad$winner_id <- bad$player1_id; stopifnot(check(bad)$has_errors)
 bad <- draw; bad$loser_id <- bad$player2_id; stopifnot(check(bad)$has_errors)
 bad <- draw; bad$score2 <- "1"; stopifnot(check(bad)$has_errors)
-future_draw <- draw; future_draw$date <- "2026-11-05"; future_draw$event_end_date <- "2026-11-05"
+future_draw <- draw; future_draw$date <- as.character(project_config$cutoff+1L); future_draw$event_end_date <- as.character(project_config$cutoff+1L)
 x <- check(future_draw); stopifnot(!x$has_errors, nrow(x$matches)==0)
 for (decision in c("scheduled", "walkover", "unresolved")) {
   noncompetitive <- unknown_draw; noncompetitive$decision <- decision

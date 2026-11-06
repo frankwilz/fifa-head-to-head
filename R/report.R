@@ -15,56 +15,60 @@ markdown_table <- function(x, digits=4) {
           apply(y, 1, function(v) paste0("| ", paste(v, collapse=" | "), " |"))), collapse="\n")
 }
 
-write_midproject_report <- function(a, inputs, cutoff, editions, report_path, input_label, sensitivity_status) {
+write_midproject_report <- function(a, inputs, cutoff, editions, report_path, input_label, sensitivity_status, availability) {
   m <- a$metrics; r <- a$rankings; cohort <- r[r$scope=="combined",,drop=FALSE]
   top <- leading_rankings(cohort)[,c("handle","pagerank_rank","pagerank","wins","losses","opponents")]
   coverage <- data.frame(game_edition=editions,
-    matches=vapply(editions, function(e) sum(inputs$matches$game_edition==e), integer(1)))
-  n_edition <- sum(coverage$matches>0)
-  major <- sum(!is.na(inputs$matches$tier) & inputs$matches$tier %in% c("world","major","S","A"))
-  exact_unknown <- sum(is.na(inputs$matches$date))
-  sources <- sort(unique(inputs$matches$source_url))
+    matches=vapply(editions,function(e) sum(inputs$matches$game_edition==e),integer(1)))
+  careers <- cohort[is.finite(cohort$earnings_usd),,drop=FALSE]
+  gap <- careers[order(-abs(careers$pagerank_minus_earnings_rank),careers$handle),,drop=FALSE]
+  gap <- head(gap[,c("handle","earnings_usd","pagerank_rank_earnings_subset","earnings_rank","pagerank_minus_earnings_rank")],10)
+  money <- a$correlations[a$correlations$scope=="combined" & a$correlations$comparison=="pagerank_vs_earnings",,drop=FALSE]
   best <- cohort$handle[which.min(cohort$pagerank_rank)]
   text <- c(
-    "# Who Really Beats Whom: mid-project report draft", "",
-    paste0("Analysis cutoff: **",cutoff,"** (America/Vancouver). Target report date: **November 6, 2026**."), "",
-    "## Current result and status", "",
-    paste0("The executable R workflow validates and analyzes ",nrow(inputs$matches)," source-backed match records involving ",nrow(cohort)," players across ",n_edition," of the ",length(editions)," planned editions. Input: ",input_label,". These are a convenience sample of major championship results, with edition-specific omissions recorded in docs/data-coverage.md. They establish that the analysis works; they do not establish a global professional ranking."), "",
-    paste0("Within the observed combined network, **",best,"** has the largest weighted PageRank. This position depends on the selected events, opponents and omitted rounds. It must not be interpreted as the strongest FIFA professional over 2017–2026."), "",
-    "The current milestone's computation is implemented. Full data collection and the empirical PageRank-versus-career-earnings comparison remain incomplete. The API clients are prepared, but no keys were supplied and no API key application was submitted. RQ2–RQ5 are future milestones.", "",
-    "## Data and quality", "",
+    "# Who Really Beats Whom: mid-project report", "",
+    paste0("Evidence cutoff: **",cutoff,"** (America/Vancouver). Report due **November 6, 2026**. Research draft; not submitted."), "",
+    "## Results and current status", "",
+    paste0("The R workflow validates ",nrow(inputs$matches)," source-backed head-to-head fixtures involving ",nrow(cohort)," players across ",sum(coverage$matches>0)," of ",length(editions)," proposed editions. Input: ",input_label,". Official world, continental and domestic events are represented. All editions having observations does not imply complete historical coverage."), "",
+    paste0("Within the observed combined network, **",best,"** has the largest weighted PageRank. This is a sample-dependent ranking, affected by event selection, bracket progression and unequal coverage across editions; it cannot establish the strongest professional globally."), "",
+    if(nrow(money) && money$status=="computed") paste0("RQ1's combined comparison with provider-recorded career earnings now computes: **Spearman rho = ",format(round(money$spearman_rho,4),nsmall=4),"**, using **",money$n_complete," matched players**. Provider totals are incomplete observations, not verified complete actual career earnings. The per-edition comparison statuses are reported below.") else "The combined earnings comparison has insufficient matched nonconstant observations; see its explicit status below.", "",
+    "## Availability and data quality", "",
+    markdown_table(availability), "",
     markdown_table(coverage), "",
-    paste0("There are ",nrow(inputs$earnings)," eligible earnings snapshot rows. Unknown earnings stay missing. ",exact_unknown," match records lack an exact match day; their sourced event end dates are used only to confirm that the event finished by the cutoff. They retain their original missing exact dates. The public cohort omits group/league stages and regional or lower-tier events; this creates strong selection bias toward championship progression."), "",
-    paste0("Validation recorded ",sum(inputs$issues$severity=="error")," errors, ",sum(inputs$issues$severity=="excluded")," exclusion notices and ",sum(inputs$issues$severity=="warning")," uncertainty warnings. Notices count issues rather than necessarily distinct rows. See results/quality-issues.csv. IDs and source URLs are preserved in clean CSVs."), "",
+    paste0("The input includes ",sum(inputs$earnings$scope=="career")," career and ",sum(inputs$earnings$scope=="edition")," edition earnings snapshots. Of the combined network's ",nrow(cohort)," players, ",nrow(careers)," have matched career measurements. Unlisted player/game observations remain missing, never zero. ",sum(is.na(inputs$matches$date))," fixtures retain unknown exact match days and use sourced event-end bounds only for cutoff eligibility."), "",
+    paste0("Validation recorded ",sum(inputs$issues$severity=="error")," errors, ",sum(inputs$issues$severity=="excluded")," exclusion notices and ",sum(inputs$issues$severity=="warning")," uncertainty warnings. Counts refer to notices rather than necessarily distinct rows. Clean CSVs preserve IDs and sources; results/quality-issues.csv records the notices."), "",
+    "The earnings estimand is now explicitly the amount the provider reports at retrieval. Earlier exclusions treated incomplete profiles as unusable for any comparison. That was unnecessarily restrictive for a comparison with provider-recorded totals. The revised analysis does not claim that missing tournaments have been repaired, add known prizes onto potentially overlapping totals, or backdate November 6 observations into the November 4 snapshot. See docs/earnings-provenance.md for retrieval evidence, aliases and identity exclusions.", "",
     "## Network construction and descriptive metrics", "",
-    "Each decisive completed 1v1 series/tie contributes one directed loser-to-winner edge, weighted by repeated wins over that opponent. The undirected played network counts all completed fixtures between each pair, including draws. Draws do not create win-network edges. Penalty-decided ties have an explicit winner; shootout scores are not goal totals. Vertices are the players participating in the selected scope. A pooled graph and a separate graph for each observed edition are exported as GraphML and edge CSVs.", "",
+    "One completed source-listed 1v1 bracket fixture or series contributes one played-edge unit; historical multi-leg ties count once as aggregate series. A decisive fixture creates a loser-to-winner edge. Repeated opponents accumulate edge weight. Completed draws enter the played network only. Penalty winners are explicit; shootout scores are not goal totals. Only participating players enter a scope. Combined and edition networks are exported as GraphML and edge CSVs.", "",
     markdown_table(m[,c("scope","nodes","matches","win_edges","played_edges","density_played","mean_degree_played","components_played","giant_component_fraction")]), "",
-    "In-degree counts distinct opponents beaten; incoming strength counts won ties. Total played degree counts distinct opponents, whereas weighted played degree counts all ties. A low degree in this sample is partly induced by knockout format and omitted rounds, so it is insufficient evidence for regional isolation.", "",
-    "## RQ1: ranking by defeated opponents", "",
-    "Weighted directed PageRank uses damping 0.85. Average ranks handle ties after PageRank is rounded to 12 significant digits for ranking and Spearman comparisons only; raw scores are retained. Smaller rank numbers are better. Rank gaps are PageRank rank minus the comparison rank, so negative gaps indicate a better PageRank position. Earnings gaps compare the same subset of players with available earnings. Combined graphs use career totals and edition graphs use edition totals, with the latest snapshot no later than the cutoff.", "",
+    "In-degree counts distinct opponents beaten, incoming strength counts won fixtures, played degree counts distinct opponents, and played strength counts fixtures. Low degree can reflect knockout format and omitted stages; it does not alone demonstrate regional isolation.", "",
+    "## RQ1: rankings and recorded earnings", "",
+    "Weighted PageRank uses damping 0.85. Average ranks handle ties after scores are rounded to 12 significant digits for ranking/correlation only; raw PageRank is retained. Negative rank gaps indicate a better PageRank position than the comparison rank. Earnings rank gaps use the identical matched player subset. Combined graphs use career totals; edition graphs use only the corresponding game's reported totals. Each snapshot must be dated no later than the cutoff.", "",
     markdown_table(top), "",
     markdown_table(a$correlations), "",
-    "No global or career inference is supported by this sample. Missing earnings, insufficient complete pairs, and constant inputs have explicit unavailable statuses. A Spearman coefficient is descriptive here; the workflow does not claim statistical significance or causal player quality. Tournament placements are not yet imported, and the current career-earnings comparison cannot be completed without verified observations.", "",
-    "## Random-network and coverage checks", "",
-    "For each scope, 100 reproducible undirected G(n,m) graphs retain the observed number of players and played edges. Their mean degree and density equal the observation by construction. The structural comparison therefore uses giant-component fraction and global transitivity. The 2.5%–97.5% simulation interval is a null-model reference range, not a confidence interval for the FIFA population. Some sparse simulated graphs have undefined transitivity; the finite replicate count is exported.", "",
+    "Largest absolute differences between PageRank and provider-recorded career-earnings ranks (within the matched subset):", "",
+    markdown_table(gap), "",
+    "Career totals may include games or competition formats absent from this 1v1 network. Provider pages omit known tournaments, and players with recorded earnings are not a random subset. Edition totals are separate measurements and absent game rows are not inferred as zero. Correlations describe the observed data; no causal interpretation or statistical-significance claim is made.", "",
+    "## Event-scope sensitivity and random reference graphs", "",
+    paste0("Event-scope sensitivity: ",sensitivity_status), "",
+    "`research_event_scope_v1` classifies world championships as world, the international eChampions League as major, and domestic ePremier League events as regional. These are research categories, not official or Liquipedia tier labels. The world/major subset, full-sample comparison ranks and correlations are exported under results/major-tier-sensitivity/. Rank changes are calculated on the same shared players, so simply removing players does not mechanically improve everyone else's comparison rank. Since domestic records are concentrated in FIFA20/21, this sensitivity also changes edition coverage; it cannot isolate a pure tournament-tier effect. Small cups and open qualifiers remain underrepresented.", "",
+    "For each scope, 100 seeded undirected G(n,m) graphs retain the observed player and played-edge counts. Density and mean degree match by construction, so comparison uses giant-component fraction and global transitivity. Simulation 2.5%–97.5% intervals are null-model reference ranges, not population confidence intervals. Undefined transitivity is retained as undefined, with finite replicate counts exported.", "",
     markdown_table(a$random_baseline[,c("scope","observed_giant_fraction","random_giant_mean","random_giant_q025","random_giant_q975","observed_transitivity","random_transitivity_mean")]), "",
-    paste0("Tier sensitivity: ",sensitivity_status," Eligible major-tier rows: ",major,". The current public records have no consistent provider tier classification; an unknown tier is not recoded as lower tier. With no lower-tier observations, the proposal's with/without-lower-tier comparison remains pending."), "",
     "## Figures and reproducibility", "",
-    "The pipeline generates `results/figures/pagerank-top10.png`, `played-network.png`, and `degree-distribution.png`, plus scope-specific metrics, rankings, correlation statuses, random baselines and graph exports. Re-run `Rscript scripts/run_pipeline.R` from the repository root; run `Rscript scripts/test.R` for validation. `results/run-manifest.csv` records the cutoff, input hashes and dependency versions. `results/session-info.txt` records the R environment.", "",
-    "![PageRank in the observed cohort](../results/figures/pagerank-top10.png)", "",
+    "Run `Rscript scripts/run_pipeline.R` from the repository root and `Rscript scripts/test.R` for checks. The default run is offline. API cache normalization is executable through scripts/normalize_earnings.R; live earnings requests still require a local key. Approved Liquipedia exports can use the canonical CSV path. results/run-manifest.csv records the cutoff, input hashes and dependency versions; results/session-info.txt records the R environment.", "",
+    "![Leading PageRank scores](../results/figures/pagerank-top10.png)", "",
+    "![PageRank and recorded career earnings](../results/figures/pagerank-vs-earnings.png)", "",
     "![Observed played network](../results/figures/played-network.png)", "",
-    "![Observed opponent-degree distribution](../results/figures/degree-distribution.png)", "",
-    "## Work required before submission and later analysis", "",
-    "1. Obtain approved access or curated exports; collect the missing editions, regional qualifiers and omitted stages; resolve cross-source aliases and duplicate series.",
-    "2. Join properly scoped and dated career/edition earnings and tournament placements; audit region, platform and tournament-tier coverage.",
-    "3. Rerun and review RQ1 against the broader corpus, quantify coverage and revise this draft's conclusions before the November 6 submission.",
-    "4. November 7–20: communities/assortativity (RQ2), triad null models (RQ3), and bridge analysis (RQ4). November 21–27: robustness (RQ5). November 28–December 2: final report and video, for the December 3 presentation.", "",
-    "## Match sources", "",
-    vapply(sources, function(u) paste0("- [Official result source](",u,")"), character(1)), "",
-    "Source-specific curation and metadata provenance: `data/raw/sources.csv` and `docs/data-coverage.md`. Provider documentation: [Esports Earnings API](https://www.esportsearnings.com/apidocs), [Liquipedia API](https://liquipedia.net/api), [Liquipedia API terms](https://liquipedia.net/api-terms-of-use). Method reference: [igraph PageRank](https://r.igraph.org/reference/page_rank.html)."
+    "![Opponent-degree distribution](../results/figures/degree-distribution.png)", "",
+    "## Remaining work", "",
+    "Broader event collection and identity audits remain necessary for global conclusions. Platform and country provenance have been improved, but competitive qualifying region must be sourced separately; a country flag is not proof of a player's circuit region. Tournament-placement comparisons are not implemented yet. API access credentials and an approved LPDB schema remain external prerequisites for large-scale collection, not for reproducing the checked-in results.", "",
+    "The November 6 deliverable contains descriptive analysis and RQ1 results with explicit sampling limits. November 7–20 covers communities/assortativity (RQ2), triads (RQ3) and bridges (RQ4); November 21–27 covers robustness (RQ5); November 28–December 2 covers the final report and video, for the December 3 presentation. No submission or access application was sent.", "",
+    "## Sources", "",
+    "Match evidence: data/raw/sources.csv, data/raw/match_sources_expansion.csv and docs/match-expansion.md. Earnings snapshots and identity decisions: data/raw/earnings_sources.csv and docs/earnings-provenance.md. Event classifications and platform sources: data/raw/tournaments.csv. These registers link the official competition reports and provider profiles used by each record.", "",
+    "Methods and access documentation: [igraph PageRank](https://r.igraph.org/reference/page_rank.html), [Esports Earnings API](https://www.esportsearnings.com/apidocs), [Liquipedia API](https://liquipedia.net/api) and [API terms](https://liquipedia.net/api-terms-of-use)."
   )
-  dir.create(dirname(report_path), recursive=TRUE, showWarnings=FALSE)
-  writeLines(text, report_path)
+  dir.create(dirname(report_path),recursive=TRUE,showWarnings=FALSE)
+  writeLines(text,report_path)
 }
 
 write_figures <- function(a, output_dir) {
@@ -94,4 +98,17 @@ write_figures <- function(a, output_dir) {
   par(mar=c(5,5,4,2)); barplot(d$players,names.arg=d$degree,col="#147d92",border=NA,
     xlab="Distinct opponents played",ylab="Players",main="Observed opponent-degree distribution")
   dev.off()
+  money <- r[is.finite(r$earnings_usd),,drop=FALSE]
+  png(file.path(output_dir,"pagerank-vs-earnings.png"),width=1500,height=1100,res=160)
+  par(mar=c(5,5,5,2))
+  if(nrow(money)) {
+    plot(money$earnings_usd+1,money$pagerank,log="x",pch=19,col="#147d92",
+      xlab="Provider-recorded career earnings + $1 (USD; logarithmic scale)",ylab="Weighted PageRank",
+      main="PageRank and recorded career earnings")
+    label <- order(money$pagerank,decreasing=TRUE)[seq_len(min(5L,nrow(money)))]
+    text(money$earnings_usd[label]+1,money$pagerank[label],labels=money$handle[label],pos=3,cex=.7)
+    mtext(paste0(nrow(money)," matched players; incomplete provider coverage; observational comparison"),side=3,line=.5,cex=.8)
+  } else { plot.new();text(.5,.5,"No matched career-earnings observations at this cutoff") }
+  dev.off()
+
 }

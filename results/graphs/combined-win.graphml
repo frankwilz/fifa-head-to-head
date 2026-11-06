@@ -9,419 +9,1027 @@
   <key id="v_country" for="node" attr.name="country" attr.type="string"/>
   <key id="v_region" for="node" attr.name="region" attr.type="string"/>
   <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="v_country_source_url" for="node" attr.name="country_source_url" attr.type="string"/>
   <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
   <graph id="G" edgedefault="directed">
     <node id="n0">
       <data key="v_name">player_abumakkah</data>
       <data key="v_handle">AbuMakkah</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">SA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/126557-abomakkah-ahmad-mujahid</data>
     </node>
     <node id="n1">
+      <data key="v_name">player_alfie_roe</data>
+      <data key="v_handle">Alfie Roe</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n2">
       <data key="v_name">player_alihanlion</data>
       <data key="v_handle">Alihanlion</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">NA</data>
     </node>
-    <node id="n2">
+    <node id="n3">
       <data key="v_name">player_anders_vejrgang</data>
       <data key="v_handle">Vejrgang</data>
       <data key="v_country">DK</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
     </node>
-    <node id="n3">
+    <node id="n4">
+      <data key="v_name">player_ashy</data>
+      <data key="v_handle">Ashy</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n5">
       <data key="v_name">player_bonanno</data>
       <data key="v_handle">Bonanno</data>
       <data key="v_country">AR</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
     </node>
-    <node id="n4">
+    <node id="n6">
       <data key="v_name">player_brice</data>
       <data key="v_handle">Brice</data>
       <data key="v_country">FR</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
-    </node>
-    <node id="n5">
-      <data key="v_name">player_chris_de_boer</data>
-      <data key="v_handle">Chris de Boer</data>
-      <data key="v_country">NA</data>
-      <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
-    </node>
-    <node id="n6">
-      <data key="v_name">player_danipitbull</data>
-      <data key="v_handle">Danipitbull</data>
-      <data key="v_country">NA</data>
-      <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
     </node>
     <node id="n7">
-      <data key="v_name">player_dfernandes</data>
-      <data key="v_handle">DFernandes</data>
+      <data key="v_name">player_callum</data>
+      <data key="v_handle">Callum</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
     </node>
     <node id="n8">
-      <data key="v_name">player_emre_yilmaz</data>
-      <data key="v_handle">Emre Yilmaz</data>
+      <data key="v_name">player_cameron_willey</data>
+      <data key="v_handle">Cameron Willey</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
     </node>
     <node id="n9">
-      <data key="v_name">player_gugaferraz</data>
-      <data key="v_handle">GugaFerraz</data>
-      <data key="v_country">NA</data>
+      <data key="v_name">player_chris_de_boer</data>
+      <data key="v_handle">Chris de Boer</data>
+      <data key="v_country">NL</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/136714-chrisdeboer-chris-de-boer</data>
     </node>
     <node id="n10">
-      <data key="v_name">player_guibarros</data>
-      <data key="v_handle">GuiBarros</data>
+      <data key="v_name">player_cosmin</data>
+      <data key="v_handle">Cosmin</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
     </node>
     <node id="n11">
-      <data key="v_name">player_hhezers</data>
-      <data key="v_handle">HHezerS</data>
-      <data key="v_country">NA</data>
+      <data key="v_name">player_damie</data>
+      <data key="v_handle">Damie</data>
+      <data key="v_country">PL</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/48639-damie-damian-augustyniak</data>
     </node>
     <node id="n12">
+      <data key="v_name">player_danipitbull</data>
+      <data key="v_handle">Danipitbull</data>
+      <data key="v_country">IT</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/101765-danipitbull-danilo-pinto</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">player_danny_taylor</data>
+      <data key="v_handle">Danny Taylor</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">player_dfernandes</data>
+      <data key="v_handle">DFernandes</data>
+      <data key="v_country">PT</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/130074-dfernandes-daniel-fernandes</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">player_diogo_mendes</data>
+      <data key="v_handle">Diogo Mendes</data>
+      <data key="v_country">PT</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/65821-diogo-mendes</data>
+    </node>
+    <node id="n16">
+      <data key="v_name">player_dragon</data>
+      <data key="v_handle">Dragon</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n17">
+      <data key="v_name">player_emre_yilmaz</data>
+      <data key="v_handle">Emre Yilmaz</data>
+      <data key="v_country">NL</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/110314-emreyilmaz-emre-yilmaz</data>
+    </node>
+    <node id="n18">
+      <data key="v_name">player_ethxnh</data>
+      <data key="v_handle">EthxnH</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/87667-ethxnh-ethan-higgins</data>
+    </node>
+    <node id="n19">
+      <data key="v_name">player_fully</data>
+      <data key="v_handle">Fully</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n20">
+      <data key="v_name">player_gorilla</data>
+      <data key="v_handle">Gorilla</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/16759-hugegorilla-spencer-ealing</data>
+    </node>
+    <node id="n21">
+      <data key="v_name">player_gugaferraz</data>
+      <data key="v_handle">GugaFerraz</data>
+      <data key="v_country">BR</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/160460-gugaferraz-gustavo-ferraz</data>
+    </node>
+    <node id="n22">
+      <data key="v_name">player_guibarros</data>
+      <data key="v_handle">GuiBarros</data>
+      <data key="v_country">BR</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/130311-guibarros-guilherme-barros</data>
+    </node>
+    <node id="n23">
+      <data key="v_name">player_guigsey</data>
+      <data key="v_handle">GuigseyBACK</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n24">
+      <data key="v_name">player_h1thegoat</data>
+      <data key="v_handle">H1TheGoat</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n25">
+      <data key="v_name">player_harry_hesketh</data>
+      <data key="v_handle">Harry Hesketh</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n26">
+      <data key="v_name">player_hashtag_shawrey</data>
+      <data key="v_handle">Hashtag Shawrey</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/57103-shawrey-alex-shaw</data>
+    </node>
+    <node id="n27">
+      <data key="v_name">player_healy</data>
+      <data key="v_handle">Healy</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n28">
+      <data key="v_name">player_hhezers</data>
+      <data key="v_handle">HHezerS</data>
+      <data key="v_country">IT</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/93973-hhezers-lucio-vecchione</data>
+    </node>
+    <node id="n29">
       <data key="v_name">player_jafonso</data>
       <data key="v_handle">Jafonso</data>
       <data key="v_country">PT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
     </node>
-    <node id="n13">
+    <node id="n30">
+      <data key="v_name">player_jamboo</data>
+      <data key="v_handle">Jamboo</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n31">
+      <data key="v_name">player_jas</data>
+      <data key="v_handle">Jas1875</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n32">
+      <data key="v_name">player_jayden_groden</data>
+      <data key="v_handle">Jayden</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/101748-jayden-groden</data>
+    </node>
+    <node id="n33">
       <data key="v_name">player_jonny</data>
       <data key="v_handle">Jonny</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">DE</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/130048-jonny-jonas-wirth</data>
     </node>
-    <node id="n14">
+    <node id="n34">
       <data key="v_name">player_k1john</data>
       <data key="v_handle">K1John</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">EG</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/130075-k1john-john-mouneer</data>
     </node>
-    <node id="n15">
+    <node id="n35">
       <data key="v_name">player_karimisbak</data>
       <data key="v_handle">Karimisbak</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">IT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/93292-karimisback-karim-rmaiti</data>
     </node>
-    <node id="n16">
+    <node id="n36">
       <data key="v_name">player_kurt0411</data>
       <data key="v_handle">kurt0411</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">MT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/46922-kurt0411-kurt-fenech</data>
     </node>
-    <node id="n17">
-      <data key="v_name">player_levi_de_weerd</data>
-      <data key="v_handle">Levi de Weerd</data>
+    <node id="n37">
+      <data key="v_name">player_kyle_hammond</data>
+      <data key="v_handle">Hammond</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
     </node>
-    <node id="n18">
+    <node id="n38">
+      <data key="v_name">player_levi_de_weerd</data>
+      <data key="v_handle">Levi de Weerd</data>
+      <data key="v_country">NL</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/85333-levi-de-weerd</data>
+    </node>
+    <node id="n39">
       <data key="v_name">player_levyfinn</data>
       <data key="v_handle">levyfinn</data>
       <data key="v_country">DE</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
     </node>
-    <node id="n19">
+    <node id="n40">
+      <data key="v_name">player_luca_schilder</data>
+      <data key="v_handle">Luca Schilder</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n41">
       <data key="v_name">player_luukwijdeveld</data>
       <data key="v_handle">LuukWijdeveld</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">NA</data>
     </node>
-    <node id="n20">
+    <node id="n42">
       <data key="v_name">player_manubachoore</data>
       <data key="v_handle">ManuBachoore</data>
       <data key="v_country">NL</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title</data>
+      <data key="v_country_source_url">https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title</data>
     </node>
-    <node id="n21">
+    <node id="n43">
+      <data key="v_name">player_marc_marley</data>
+      <data key="v_handle">MarcMarleyyy</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n44">
       <data key="v_name">player_mark11</data>
       <data key="v_handle">Mark11</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">AU</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/101845-mark11-mark-zakhary</data>
     </node>
-    <node id="n22">
-      <data key="v_name">player_milkalove</data>
-      <data key="v_handle">Milkalove</data>
+    <node id="n45">
+      <data key="v_name">player_mhaywxrd</data>
+      <data key="v_handle">Mhaywxrd</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
     </node>
-    <node id="n23">
+    <node id="n46">
+      <data key="v_name">player_michael_fisher</data>
+      <data key="v_handle">Michael Fisher</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n47">
+      <data key="v_name">player_milkalove</data>
+      <data key="v_handle">Milkalove</data>
+      <data key="v_country">DE</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/130050-milkalove-justin-springer</data>
+    </node>
+    <node id="n48">
       <data key="v_name">player_moauba</data>
       <data key="v_handle">MoAuba</data>
       <data key="v_country">DE</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/moauba-becomes-first-german-to-win-fifa-eworld-cup</data>
+      <data key="v_country_source_url">https://inside.fifa.com/news/moauba-becomes-first-german-to-win-fifa-eworld-cup</data>
     </node>
-    <node id="n24">
+    <node id="n49">
+      <data key="v_name">player_mp9mike</data>
+      <data key="v_handle">MP9Mike</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n50">
       <data key="v_name">player_msdossary</data>
       <data key="v_handle">Msdossary</data>
       <data key="v_country">SA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+      <data key="v_country_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
     </node>
-    <node id="n25">
+    <node id="n51">
       <data key="v_name">player_nassada</data>
       <data key="v_handle">Nassada</data>
       <data key="v_country">MA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
     </node>
-    <node id="n26">
+    <node id="n52">
       <data key="v_name">player_neat</data>
       <data key="v_handle">Neat</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">ES</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/88199-neat-ander-tobal</data>
     </node>
-    <node id="n27">
+    <node id="n53">
       <data key="v_name">player_nicolas99fc</data>
       <data key="v_handle">nicolas99fc</data>
       <data key="v_country">AR</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
     </node>
-    <node id="n28">
+    <node id="n54">
+      <data key="v_name">player_niksneb</data>
+      <data key="v_handle">NiKSNEB</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/101750-niksneb-jacob-benskin</data>
+    </node>
+    <node id="n55">
       <data key="v_name">player_obrun</data>
       <data key="v_handle">Obrun2002</data>
       <data key="v_country">IT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
     </node>
-    <node id="n29">
+    <node id="n56">
+      <data key="v_name">player_ollelito</data>
+      <data key="v_handle">Ollelito</data>
+      <data key="v_country">SE</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/49937-ollelito-olle-arbin</data>
+    </node>
+    <node id="n57">
+      <data key="v_name">player_painter</data>
+      <data key="v_handle">Painter</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n58">
+      <data key="v_name">player_papsity</data>
+      <data key="v_handle">Papsity</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n59">
       <data key="v_name">player_paulo_neto</data>
       <data key="v_handle">Paulo Neto</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">BR</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/61473-paulo-neto</data>
     </node>
-    <node id="n30">
+    <node id="n60">
       <data key="v_name">player_phzin</data>
       <data key="v_handle">PHzin</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">BR</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/76886-phzin-paulo-henrique-chaves</data>
     </node>
-    <node id="n31">
+    <node id="n61">
+      <data key="v_name">player_planettoast</data>
+      <data key="v_handle">PlanetToast</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n62">
+      <data key="v_name">player_redlac</data>
+      <data key="v_handle">RedLac</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n63">
+      <data key="v_name">player_royal_funky</data>
+      <data key="v_handle">Royal Funky</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n64">
       <data key="v_name">player_rvplegend10</data>
       <data key="v_handle">RvPLegend10</data>
       <data key="v_country">RO</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
     </node>
-    <node id="n32">
-      <data key="v_name">player_samugamer</data>
-      <data key="v_handle">Samugamer</data>
+    <node id="n65">
+      <data key="v_name">player_ryan_pessoa</data>
+      <data key="v_handle">Ryan Pessoa</data>
       <data key="v_country">NA</data>
       <data key="v_region">NA</data>
-      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
     </node>
-    <node id="n33">
+    <node id="n66">
+      <data key="v_name">player_salman_ahmad</data>
+      <data key="v_handle">Salman Ahmad</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n67">
+      <data key="v_name">player_samugamer</data>
+      <data key="v_handle">Samugamer</data>
+      <data key="v_country">IT</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/141296-samugamer-07-samuele-prestigiacomo</data>
+    </node>
+    <node id="n68">
+      <data key="v_name">player_sean_flossy</data>
+      <data key="v_handle">Sean Flossy</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n69">
+      <data key="v_name">player_shellzz</data>
+      <data key="v_handle">Shellzz</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/38684-xshellzz-shaun-springette</data>
+    </node>
+    <node id="n70">
       <data key="v_name">player_stefanopinna</data>
       <data key="v_handle">StefanoPinna</data>
       <data key="v_country">BE</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+      <data key="v_country_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
     </node>
-    <node id="n34">
+    <node id="n71">
+      <data key="v_name">player_stingrayjnr</data>
+      <data key="v_handle">Stingrayjnr</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/110316-stingray-dan-ray</data>
+    </node>
+    <node id="n72">
+      <data key="v_name">player_stokes</data>
+      <data key="v_handle">Stokes</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2075924</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/57208-tom-stokes</data>
+    </node>
+    <node id="n73">
+      <data key="v_name">player_tass</data>
+      <data key="v_handle">Tass</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/10735-tass-tassal-rushan</data>
+    </node>
+    <node id="n74">
       <data key="v_name">player_tekkz</data>
       <data key="v_handle">Tekkz</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">GB</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt</data>
     </node>
-    <node id="n35">
+    <node id="n75">
+      <data key="v_name">player_tom_leese</data>
+      <data key="v_handle">Tom Leese</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/110505-tom-thomas-leese</data>
+    </node>
+    <node id="n76">
       <data key="v_name">player_umut</data>
       <data key="v_handle">Umut</data>
       <data key="v_country">DE</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fifa.com/en/articles/umut-crowned-world-champion-fifae-world-cup-2022</data>
+      <data key="v_country_source_url">https://www.fifa.com/en/articles/umut-crowned-world-champion-fifae-world-cup-2022</data>
     </node>
-    <node id="n36">
+    <node id="n77">
+      <data key="v_name">player_unsal</data>
+      <data key="v_handle">Unsal</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/2076123</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n78">
+      <data key="v_name">player_venny</data>
+      <data key="v_handle">Venny</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/57203-venny-owen-venn</data>
+    </node>
+    <node id="n79">
       <data key="v_name">player_xcharifx</data>
       <data key="v_handle">xcharifx</data>
       <data key="v_country">MA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
     </node>
-    <node id="n37">
+    <node id="n80">
       <data key="v_name">player_yuval</data>
       <data key="v_handle">Yuval</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">IL</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/101822-yuvalbeli-yuval-blizovsky</data>
     </node>
-    <edge source="n26" target="n0">
+    <edge source="n52" target="n0">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n29" target="n1">
+    <edge source="n59" target="n2">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n8" target="n2">
+    <edge source="n17" target="n3">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n11" target="n2">
+    <edge source="n28" target="n3">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n20" target="n2">
+    <edge source="n42" target="n3">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n36" target="n2">
+    <edge source="n79" target="n3">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n37" target="n2">
+    <edge source="n80" target="n3">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n11" target="n3">
+    <edge source="n1" target="n4">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n32" target="n3">
+    <edge source="n28" target="n5">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n17" target="n4">
+    <edge source="n67" target="n5">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n27" target="n4">
+    <edge source="n38" target="n6">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n28" target="n4">
+    <edge source="n53" target="n6">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n17" target="n7">
+    <edge source="n55" target="n6">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n34" target="n10">
+    <edge source="n25" target="n8">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n0" target="n11">
+    <edge source="n66" target="n8">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n14" target="n12">
+    <edge source="n49" target="n10">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n8" target="n17">
+    <edge source="n73" target="n10">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n32" target="n17">
+    <edge source="n77" target="n10">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n3" target="n18">
+    <edge source="n25" target="n11">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n24" target="n18">
+    <edge source="n71" target="n11">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n27" target="n18">
+    <edge source="n58" target="n13">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n4" target="n20">
+    <edge source="n38" target="n14">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n10" target="n20">
+    <edge source="n4" target="n15">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n13" target="n20">
+    <edge source="n16" target="n15">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n21" target="n20">
+    <edge source="n31" target="n15">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n28" target="n20">
+    <edge source="n32" target="n15">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n30" target="n21">
+    <edge source="n20" target="n16">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n15" target="n22">
+    <edge source="n23" target="n16">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n24" target="n23">
+    <edge source="n40" target="n16">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n27" target="n23">
+    <edge source="n74" target="n16">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n5" target="n24">
+    <edge source="n19" target="n18">
+      <data key="e_weight">2</data>
+    </edge>
+    <edge source="n24" target="n19">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n16" target="n24">
+    <edge source="n37" target="n19">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n33" target="n24">
+    <edge source="n74" target="n22">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n2" target="n25">
+    <edge source="n16" target="n23">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n7" target="n25">
+    <edge source="n20" target="n23">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n22" target="n27">
+    <edge source="n66" target="n25">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n19" target="n29">
+    <edge source="n23" target="n27">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n1" target="n31">
+    <edge source="n40" target="n27">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n9" target="n31">
+    <edge source="n68" target="n27">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n18" target="n31">
+    <edge source="n0" target="n28">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n25" target="n31">
+    <edge source="n34" target="n29">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n35" target="n31">
+    <edge source="n62" target="n31">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n0" target="n32">
+    <edge source="n65" target="n31">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n30" target="n32">
+    <edge source="n72" target="n32">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n6" target="n34">
+    <edge source="n24" target="n37">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n27" target="n35">
+    <edge source="n78" target="n37">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n0" target="n36">
+    <edge source="n17" target="n38">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n8" target="n37">
+    <edge source="n67" target="n38">
       <data key="e_weight">1</data>
     </edge>
-    <edge source="n12" target="n37">
+    <edge source="n5" target="n39">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n50" target="n39">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n53" target="n39">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n6" target="n42">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n22" target="n42">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n33" target="n42">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n44" target="n42">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n55" target="n42">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n11" target="n43">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n13" target="n43">
+      <data key="e_weight">2</data>
+    </edge>
+    <edge source="n26" target="n43">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n46" target="n43">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n74" target="n43">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n60" target="n44">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n10" target="n45">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n18" target="n45">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n75" target="n45">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n77" target="n45">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n58" target="n46">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n35" target="n47">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n50" target="n48">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n53" target="n48">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n9" target="n50">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n36" target="n50">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n70" target="n50">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n3" target="n51">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n14" target="n51">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n5" target="n53">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n47" target="n53">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n74" target="n53">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n57" target="n54">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n15" target="n56">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n27" target="n56">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n31" target="n56">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n65" target="n56">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n72" target="n56">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n41" target="n59">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n61" target="n62">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n57" target="n63">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n2" target="n64">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n21" target="n64">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n39" target="n64">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n51" target="n64">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n76" target="n64">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n61" target="n65">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n62" target="n65">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n0" target="n67">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n60" target="n67">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n54" target="n68">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n63" target="n68">
+      <data key="e_weight">2</data>
+    </edge>
+    <edge source="n10" target="n69">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n18" target="n69">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n37" target="n69">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n43" target="n69">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n45" target="n69">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n56" target="n69">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n8" target="n71">
+      <data key="e_weight">2</data>
+    </edge>
+    <edge source="n1" target="n72">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n4" target="n72">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n32" target="n72">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n49" target="n73">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n12" target="n74">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n30" target="n74">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n54" target="n74">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n68" target="n74">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n7" target="n75">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n37" target="n75">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n43" target="n75">
+      <data key="e_weight">2</data>
+    </edge>
+    <edge source="n46" target="n75">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n71" target="n75">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n53" target="n76">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n73" target="n77">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n0" target="n79">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n17" target="n80">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n29" target="n80">
       <data key="e_weight">1</data>
     </edge>
   </graph>

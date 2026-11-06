@@ -1,2 +1,3 @@
 method,playerid,gameid,tournamentid,offset
-LookupRecentTournaments,,,,0
+LookupPlayerById,111288,,,
+LookupHighestEarningPlayersByGame,,518,,0

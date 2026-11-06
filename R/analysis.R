@@ -18,7 +18,8 @@ analysis_empty_rankings <- function() {
     pagerank_rank = numeric(), wins = numeric(), losses = numeric(), draws = numeric(),
     matches_played = numeric(), win_rate = numeric(), opponents = numeric(),
     opponents_beaten = numeric(), opponents_lost_to = numeric(),
-    wins_rank = numeric(), earnings_usd = numeric(), earnings_as_of = character(),
+    wins_rank = numeric(), earnings_usd = numeric(), earnings_as_of = character(), earnings_measurement = character(),
+    earnings_coverage_status = character(), earnings_source_url = character(),
     earnings_rank = numeric(), pagerank_rank_earnings_subset = numeric(), pagerank_minus_wins_rank = numeric(),
     pagerank_minus_earnings_rank = numeric(), stringsAsFactors = FALSE
   )
@@ -79,7 +80,8 @@ analysis_spearman <- function(scope, comparison, x, y) {
 # that edition. Missing observations remain NA, including in ranking.
 analysis_earnings <- function(ids, scope, earnings, cutoff) {
   result <- data.frame(player_id = ids, earnings_usd = NA_real_,
-                       earnings_as_of = NA_character_, stringsAsFactors = FALSE)
+                       earnings_as_of = NA_character_, earnings_measurement = NA_character_,
+                       earnings_coverage_status = NA_character_, earnings_source_url = NA_character_, stringsAsFactors = FALSE)
   if (is.null(earnings) || nrow(earnings) == 0L) return(result)
   required <- c("player_id", "scope", "game_edition", "earnings_usd", "as_of", "source_url")
   if (!all(required %in% names(earnings))) stop("Earnings table is missing required columns.")
@@ -105,6 +107,9 @@ analysis_earnings <- function(ids, scope, earnings, cutoff) {
   at <- match(ids, eligible$player_id)
   result$earnings_usd <- values[at]
   result$earnings_as_of <- as.character(eligible$as_of[at])
+  result$earnings_source_url <- eligible$source_url[at]
+  result$earnings_measurement <- if ("measurement" %in% names(eligible)) eligible$measurement[at] else ifelse(is.na(at), NA_character_, "provider_recorded_total")
+  result$earnings_coverage_status <- if ("coverage_status" %in% names(eligible)) eligible$coverage_status[at] else ifelse(is.na(at), NA_character_, "completeness_unverified")
   result
 }
 
@@ -166,7 +171,7 @@ analysis_random_baseline <- function(scope, played, replicates = 100L) {
     row.names = NULL, stringsAsFactors = FALSE)
 }
 
-analyze_networks <- function(matches, players, earnings = NULL, cutoff = as.Date("2026-11-04")) {
+analyze_networks <- function(matches, players, earnings = NULL, cutoff = as.Date("2026-11-06")) {
   if (!requireNamespace("igraph", quietly = TRUE)) stop("Install igraph before running analysis.")
   cutoff <- as.Date(cutoff)
   if (length(cutoff) != 1L || is.na(cutoff)) stop("cutoff must be one valid date.")
@@ -249,7 +254,8 @@ analyze_networks <- function(matches, players, earnings = NULL, cutoff = as.Date
       draws = unname(draws), matches_played = unname(matches_played), win_rate = unname(wins / matches_played),
       opponents = unname(opponents), opponents_beaten = unname(in_degree), opponents_lost_to = unname(out_degree),
       wins_rank = rank(-wins, ties.method = "average"), earnings_usd = money$earnings_usd,
-      earnings_as_of = money$earnings_as_of,
+      earnings_as_of = money$earnings_as_of, earnings_measurement = money$earnings_measurement,
+      earnings_coverage_status = money$earnings_coverage_status, earnings_source_url = money$earnings_source_url,
       earnings_rank = rank(-money$earnings_usd, ties.method = "average", na.last = "keep"),
       pagerank_rank_earnings_subset = rank(ifelse(is.na(money$earnings_usd), NA_real_, -pagerank_for_rank),
                                           ties.method = "average", na.last = "keep"),

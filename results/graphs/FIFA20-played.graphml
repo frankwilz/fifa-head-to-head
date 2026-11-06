@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_handle" for="node" attr.name="handle" attr.type="string"/>
+  <key id="v_country" for="node" attr.name="country" attr.type="string"/>
+  <key id="v_region" for="node" attr.name="region" attr.type="string"/>
+  <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="v_country_source_url" for="node" attr.name="country_source_url" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_name">player_callum</data>
+      <data key="v_handle">Callum</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">player_hashtag_shawrey</data>
+      <data key="v_handle">Hashtag Shawrey</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/57103-shawrey-alex-shaw</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">player_jamboo</data>
+      <data key="v_handle">Jamboo</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">player_kyle_hammond</data>
+      <data key="v_handle">Hammond</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">player_marc_marley</data>
+      <data key="v_handle">MarcMarleyyy</data>
+      <data key="v_country">NA</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">NA</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">player_tekkz</data>
+      <data key="v_handle">Tekkz</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">player_tom_leese</data>
+      <data key="v_handle">Tom Leese</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/110505-tom-thomas-leese</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">player_venny</data>
+      <data key="v_handle">Venny</data>
+      <data key="v_country">GB</data>
+      <data key="v_region">NA</data>
+      <data key="v_source_url">https://www.premierleague.com/en/news/1786632</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/57203-venny-owen-venn</data>
+    </node>
+    <edge source="n1" target="n4">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n2" target="n5">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n4" target="n5">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n0" target="n6">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n3" target="n6">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n4" target="n6">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n3" target="n7">
+      <data key="e_weight">1</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,8 +1,8 @@
 # Who Really Beats Whom
 
-A reproducible R project for the head-to-head network of competitive FIFA / EA Sports FC players. The current milestone is **November 4, 2026**: clean data, build win/played networks, describe the network, and address PageRank ranking (RQ1). The mid-project report is due November 6.
+A reproducible R project for the head-to-head network of competitive FIFA / EA Sports FC players. The current milestone is **November 6, 2026**: clean data, build win/played networks, describe the network, and address PageRank ranking (RQ1). The mid-project report is due November 6.
 
-**Current evidence:** 49 verified championship results, 38 players, and observations in 7 of 9 proposed editions. Coverage is sparse and uneven. No earnings observations are available yet. This is an executable research baseline; global rankings and full data collection remain unfinished. [Coverage and sources](docs/data-coverage.md) explain the sample precisely.
+**Current evidence:** 129 verified fixtures and 81 players across all 9 editions. Live, explicitly provider-recorded career and edition earnings now support RQ1 comparisons, and 51 world/major versus 78 domestic fixtures support a sensitivity run. Sampling and earnings coverage remain incomplete. See [coverage](docs/data-coverage.md), [the report](reports/mid-project-report.md), and [availability](results/availability.csv).
 
 ## Run it
 
@@ -25,9 +25,9 @@ Read the [mid-project report](reports/mid-project-report.md), [metrics](results/
 - CSV validation with provenance, stable IDs, score/decision checks, duplicate rejection, explicit date precision, and a cutoff. Invalid data stops analysis after a quality report is written.
 - Weighted directed win networks (loser → winner), undirected played networks, pooled and edition scopes, descriptive metrics and degree distributions. Completed draws enter the played network only.
 - Weighted PageRank, wins and correctly scoped earnings rank comparisons, with explicit missing-data statuses and ties handled consistently.
-- Seeded G(n,m) reference networks and an available major-tier sensitivity path; the current corpus lacks provider tier labels and lower-tier matches.
+- Seeded G(n,m) reference networks and an executed world/major-versus-domestic sensitivity run, using documented research event-scope categories.
 - Attributed public records and a generated mid-project report. Test fixtures are separate from empirical data.
-- Cached, throttled Esports Earnings API preparation with a no-network dry run. Approved Liquipedia export ingestion is documented; no unsupported LPDB endpoint is invented.
+- Cached, throttled Esports Earnings API preparation with a no-network dry run and tested cache-to-CSV normalization. Approved Liquipedia export ingestion is documented; no unsupported LPDB endpoint is invented.
 
 ## Add data
 
@@ -37,7 +37,7 @@ Review [the data dictionary](docs/data-dictionary.md) and [API access instructio
 Rscript scripts/run_pipeline.R --input-dir=data/input
 ```
 
-Custom-input outputs default to ignored `data/input/analysis/`, preserving the public result snapshot. `--output-dir=DIR` overrides the base output directory. `--cutoff=YYYY-MM-DD` overrides the analysis cutoff. The canonical file named `earnings.csv` may contain only its header while earnings are unavailable. API JSON exports require a reviewed identity join and normalization into these CSVs.
+Custom-input outputs default to ignored `data/input/analysis/`, preserving the public result snapshot. `--output-dir=DIR` overrides the base output directory. `--cutoff=YYYY-MM-DD` overrides the analysis cutoff. The canonical file named `earnings.csv` may contain only its header while earnings are unavailable. API JSON exports can now be normalized with `scripts/normalize_earnings.R` using reviewed identity and game maps; see the access instructions.
 
 ```sh
 Rscript scripts/fetch_api.R
@@ -60,6 +60,6 @@ This prints the earnings request plan without reading credentials or accessing t
 | `docs/` | Data dictionary, sources/coverage, access instructions, timeline |
 | `tests/` | Meaningful validation, graph, ranking, and mocked API checks |
 
-The [timeline](docs/timeline.md) distinguishes completed infrastructure from missing empirical work. Full nine-edition collection, earnings/placement joins and metadata remain pending. RQ2–RQ4 are scheduled November 7–20, RQ5 November 21–27, and final writing/video November 28–December 2. No submission, application or collaborator message was sent.
+The [timeline](docs/timeline.md) distinguishes completed infrastructure from missing empirical work. All nine editions have observations, and career/edition earnings joins now run. Full historical coverage, unresolved identities, placement comparisons and competitive-region attributes remain work to complete. RQ2–RQ4 are scheduled November 7–20, RQ5 November 21–27, and final writing/video November 28–December 2. No submission, application or collaborator message was sent.
 
 No code reuse license has been selected; see `LICENSE`. Any future Liquipedia educational-access application must satisfy its then-current open-source and attribution conditions before collection.

@@ -9,14 +9,16 @@
   <key id="v_country" for="node" attr.name="country" attr.type="string"/>
   <key id="v_region" for="node" attr.name="region" attr.type="string"/>
   <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="v_country_source_url" for="node" attr.name="country_source_url" attr.type="string"/>
   <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
       <data key="v_name">player_kurt0411</data>
       <data key="v_handle">kurt0411</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">MT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/46922-kurt0411-kurt-fenech</data>
     </node>
     <node id="n1">
       <data key="v_name">player_msdossary</data>
@@ -24,6 +26,7 @@
       <data key="v_country">SA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+      <data key="v_country_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
     </node>
     <node id="n2">
       <data key="v_name">player_stefanopinna</data>
@@ -31,6 +34,7 @@
       <data key="v_country">BE</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
+      <data key="v_country_source_url">https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion</data>
     </node>
     <edge source="n0" target="n1">
       <data key="e_weight">1</data>

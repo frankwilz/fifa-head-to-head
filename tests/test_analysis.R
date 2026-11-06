@@ -75,7 +75,7 @@ stopifnot(c$opponents == 1, c$draws == 1, c$opponents_beaten == 0, c$opponents_l
 # become an isolate; a future-dated match cannot leak into the cutoff analysis.
 multi <- make_matches(c("A", "B", "D", "F"), c("B", "C", "E", "A"),
                       c("FC24", "FC24", "FC25", "FC26"),
-                      c("2024-07-13", "2024-07-13", "2025-07-13", "2026-11-05"))
+                      c("2024-07-13", "2024-07-13", "2025-07-13", "2099-01-01"))
 scoped <- analyze_networks(multi, players)
 stopifnot(identical(names(scoped$graphs), c("combined", "FC24", "FC25")))
 assert_equal(sort(igraph::V(scoped$graphs$FC24$win)$name), c("A", "B", "C"), "Edition membership leaked.")
@@ -89,7 +89,7 @@ assert_equal(pooled$giant_component_fraction, 3 / 5, "Disconnected giant fractio
 # cutoff stay excluded even if some matches might already have taken place.
 undated <- make_matches(c("A", "B", "D"), c("B", "C", "E"),
                         c("FC24", "FC26", "FC26"), c("2024-07-13", NA, NA))
-undated$event_end_date <- c("2024-07-13", "2026-07-26", "2026-11-05")
+undated$event_end_date <- c("2024-07-13", "2026-07-26", "2099-01-01")
 undated$date_precision <- c("exact", "event_end", "event_end")
 with_end_dates <- analyze_networks(undated, players)
 stopifnot(with_end_dates$metrics$matches[with_end_dates$metrics$scope == "combined"] == 2,
@@ -103,7 +103,7 @@ assert_equal(sort(igraph::V(with_end_dates$graphs$FC26$win)$name), c("B", "C"),
 earnings <- data.frame(player_id = c("A", "A", "A", "B", "C", "A", "B", "C"),
   scope = c(rep("career", 5), rep("edition", 3)), game_edition = c(rep("", 5), rep("FC24", 3)),
   earnings_usd = c(10, 30, 999, 20, 10, 300, 200, 100),
-  as_of = c("2024-01-01", "2026-11-04", "2026-11-05", "2026-11-04", "2026-11-04", rep("2024-07-13", 3)),
+  as_of = c("2024-01-01", "2026-11-04", "2099-01-01", "2026-11-04", "2026-11-04", rep("2024-07-13", 3)),
   source_url = "https://example.invalid/test-fixture", stringsAsFactors = FALSE)
 money <- analyze_networks(multi, players, earnings)
 stopifnot(money$rankings$earnings_usd[money$rankings$scope == "combined" & money$rankings$player_id == "A"] == 30)

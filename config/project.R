@@ -1,6 +1,6 @@
 project_config <- list(
-  cutoff = as.Date("2026-11-04"),
+  cutoff = as.Date("2026-11-06"),
   editions = c("FIFA18", "FIFA19", "FIFA20", "FIFA21", "FIFA22", "FIFA23", "FC24", "FC25", "FC26"),
-  major_tiers = c("world", "major", "S", "A"),
+  major_tiers = c("world", "major"),
   seed = 20261104L
 )

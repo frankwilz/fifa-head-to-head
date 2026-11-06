@@ -9,14 +9,16 @@
   <key id="v_country" for="node" attr.name="country" attr.type="string"/>
   <key id="v_region" for="node" attr.name="region" attr.type="string"/>
   <key id="v_source_url" for="node" attr.name="source_url" attr.type="string"/>
+  <key id="v_country_source_url" for="node" attr.name="country_source_url" attr.type="string"/>
   <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
       <data key="v_name">player_abumakkah</data>
       <data key="v_handle">AbuMakkah</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">SA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/126557-abomakkah-ahmad-mujahid</data>
     </node>
     <node id="n1">
       <data key="v_name">player_anders_vejrgang</data>
@@ -24,20 +26,23 @@
       <data key="v_country">DK</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
     </node>
     <node id="n2">
       <data key="v_name">player_emre_yilmaz</data>
       <data key="v_handle">Emre Yilmaz</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">NL</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/110314-emreyilmaz-emre-yilmaz</data>
     </node>
     <node id="n3">
       <data key="v_name">player_hhezers</data>
       <data key="v_handle">HHezerS</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">IT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/93973-hhezers-lucio-vecchione</data>
     </node>
     <node id="n4">
       <data key="v_name">player_jafonso</data>
@@ -45,13 +50,15 @@
       <data key="v_country">PT</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
     </node>
     <node id="n5">
       <data key="v_name">player_k1john</data>
       <data key="v_handle">K1John</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">EG</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/130075-k1john-john-mouneer</data>
     </node>
     <node id="n6">
       <data key="v_name">player_xcharifx</data>
@@ -59,13 +66,15 @@
       <data key="v_country">MA</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
     </node>
     <node id="n7">
       <data key="v_name">player_yuval</data>
       <data key="v_handle">Yuval</data>
-      <data key="v_country">NA</data>
+      <data key="v_country">IL</data>
       <data key="v_region">NA</data>
       <data key="v_source_url">https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results</data>
+      <data key="v_country_source_url">https://www.esportsearnings.com/players/101822-yuvalbeli-yuval-blizovsky</data>
     </node>
     <edge source="n1" target="n3">
       <data key="e_weight">1</data>

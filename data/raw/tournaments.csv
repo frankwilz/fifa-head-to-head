@@ -1,0 +1,11 @@
+tournament_id,tier,tier_source_url,platform,platform_source_url,tier_scheme
+fc24_world_championship,world,https://www.fcpro.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-finals-results,,,research_event_scope_v1
+fc25_world_championship,world,https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-2025-review,PS5,https://www.ea.com/games/ea-sports-fc/fc-pro/ea-sports-fc-pro-25-official-rules,research_event_scope_v1
+fc26_world_championship,world,https://www.ea.com/games/ea-sports-fc/fc-pro/news/fc-pro-world-championship-26-review,PS5,https://www.ea.com/games/ea-sports-fc/fc-pro/ea-sports-fc-pro-26-official-rules,research_event_scope_v1
+fifa18_world_championship,world,https://inside.fifa.com/news/msdossary-crowned-fifa-eworld-cup-champion,,,research_event_scope_v1
+fifa19_world_championship,world,https://inside.fifa.com/news/moauba-becomes-first-german-to-win-fifa-eworld-cup,,,research_event_scope_v1
+fifa20_epremier_league,regional,https://www.premierleague.com/en/news/1786632,,,research_event_scope_v1
+fifa21_epremier_league,regional,https://www.premierleague.com/en/news/2075924,,,research_event_scope_v1
+fifa22_echampions_league,major,https://www.uefa.com/uefachampionsleague/news/0275-1540e9292923-a32a5d102020-1000--stars-shine-as-echampions-league-finals-wow-stockholm/,,,research_event_scope_v1
+fifa22_world_championship,world,https://www.fifa.com/en/articles/umut-crowned-world-champion-fifae-world-cup-2022,,,research_event_scope_v1
+fifa23_world_championship,world,https://www.fifa.gg/news/manubachoore-claims-the-fifae-world-champion-title,,,research_event_scope_v1

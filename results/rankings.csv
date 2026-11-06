@@ -1,95 +1,188 @@
-"scope","player_id","handle","country","region","pagerank","pagerank_rank","wins","losses","draws","matches_played","win_rate","opponents","opponents_beaten","opponents_lost_to","wins_rank","earnings_usd","earnings_as_of","earnings_rank","pagerank_rank_earnings_subset","pagerank_minus_wins_rank","pagerank_minus_earnings_rank"
-"combined","player_rvplegend10","RvPLegend10","RO",,0.179888819745974,1,5,0,0,5,1,5,5,0,2,,,,,-1,
-"combined","player_nassada","Nassada","MA",,0.113618864902239,2,2,1,0,3,0.666666666666667,3,2,1,9.5,,,,,-7.5,
-"combined","player_anders_vejrgang","Vejrgang","DK",,0.107368642149925,3,5,1,0,6,0.833333333333333,6,5,1,2,,,,,1,
-"combined","player_manubachoore","ManuBachoore","NL",,0.0694028321196045,4,5,1,0,6,0.833333333333333,6,5,1,2,,,,,2,
-"combined","player_levyfinn","levyfinn","DE",,0.0441499696698367,5,3,1,0,4,0.75,4,3,1,5,,,,,0,
-"combined","player_msdossary","Msdossary","SA",,0.0303736239462619,6,3,2,0,5,0.6,5,3,2,5,,,,,1,
-"combined","player_moauba","MoAuba","DE",,0.026141904349453,7,2,0,0,2,1,2,2,0,9.5,,,,,-2.5,
-"combined","player_brice","Brice","FR",,0.0245482293555743,8,3,1,0,4,0.75,4,3,1,5,,,,,3,
-"combined","player_yuval","Yuval",,,0.0244343683717933,9,2,1,0,3,0.666666666666667,3,2,1,9.5,,,,,-0.5,
-"combined","player_alihanlion","Alihanlion",,,0.0220101824230306,11,1,1,0,2,0.5,2,1,1,19,,,,,-8,
-"combined","player_guibarros","GuiBarros",,,0.0220101824230306,11,1,1,0,2,0.5,2,1,1,19,,,,,-8,
-"combined","player_nicolas99fc","nicolas99fc","AR",,0.0220101824230306,11,1,4,0,5,0.2,5,1,4,19,,,,,-8,
-"combined","player_bonanno","Bonanno","AR",,0.0211859592004513,13,2,1,0,3,0.666666666666667,3,2,1,9.5,,,,,3.5,
-"combined","player_levi_de_weerd","Levi de Weerd",,,0.0180678500238553,14,2,2,0,4,0.5,4,2,2,9.5,,,,,4.5,
-"combined","player_samugamer","Samugamer",,,0.0166769733357527,15,2,2,0,4,0.5,4,2,2,9.5,,,,,5.5,
-"combined","player_dfernandes","DFernandes",,,0.0162347866675362,16,1,1,0,2,0.5,2,1,1,19,,,,,-3,
-"combined","player_abumakkah","AbuMakkah",,,0.0158285082536858,19,1,3,0,4,0.25,4,1,3,19,,,,,0,
-"combined","player_jafonso","Jafonso","PT",,0.0158285082536858,19,1,1,0,2,0.5,2,1,1,19,,,,,0,
-"combined","player_milkalove","Milkalove",,,0.0158285082536858,19,1,1,0,2,0.5,2,1,1,19,,,,,0,
-"combined","player_paulo_neto","Paulo Neto",,,0.0158285082536858,19,1,1,0,2,0.5,2,1,1,19,,,,,0,
-"combined","player_tekkz","Tekkz",,,0.0158285082536858,19,1,1,0,2,0.5,2,1,1,19,,,,,0,
-"combined","player_umut","Umut","DE",,0.0132331141722917,22,1,1,0,2,0.5,2,1,1,19,,,,,3,
-"combined","player_hhezers","HHezerS",,,0.0130406944126087,23.5,1,2,0,3,0.333333333333333,3,1,2,19,,,,,4.5,
-"combined","player_xcharifx","xcharifx","MA",,0.0130406944126087,23.5,1,1,0,2,0.5,2,1,1,19,,,,,4.5,
-"combined","player_mark11","Mark11",,,0.0121922293305418,25,1,1,0,2,0.5,2,1,1,19,,,,,6,
-"combined","player_chris_de_boer","Chris de Boer",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_danipitbull","Danipitbull",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_emre_yilmaz","Emre Yilmaz",,,0.00855595040739772,32,0,3,0,3,0,3,0,3,32,,,,,0,
-"combined","player_gugaferraz","GugaFerraz",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_jonny","Jonny",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_k1john","K1John",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_karimisbak","Karimisbak",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_kurt0411","kurt0411",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_luukwijdeveld","LuukWijdeveld",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_neat","Neat",,,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"combined","player_obrun","Obrun2002","IT",,0.00855595040739772,32,0,2,0,2,0,2,0,2,32,,,,,0,
-"combined","player_phzin","PHzin",,,0.00855595040739772,32,0,2,0,2,0,2,0,2,32,,,,,0,
-"combined","player_stefanopinna","StefanoPinna","BE",,0.00855595040739772,32,0,1,0,1,0,1,0,1,32,,,,,0,
-"FC24","player_anders_vejrgang","Vejrgang","DK",,0.362758087271634,1,3,0,0,3,1,3,3,0,1,,,,,0,
-"FC24","player_yuval","Yuval",,,0.196085452579261,2,2,1,0,3,0.666666666666667,3,2,1,2,,,,,0,
-"FC24","player_jafonso","Jafonso","PT",,0.10599213652933,3.5,1,1,0,2,0.5,2,1,1,3.5,,,,,0,
-"FC24","player_xcharifx","xcharifx","MA",,0.10599213652933,3.5,1,1,0,2,0.5,2,1,1,3.5,,,,,0,
-"FC24","player_abumakkah","AbuMakkah",,,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,,,,,0,
-"FC24","player_emre_yilmaz","Emre Yilmaz",,,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,,,,,0,
-"FC24","player_hhezers","HHezerS",,,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,,,,,0,
-"FC24","player_k1john","K1John",,,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,,,,,0,
-"FC25","player_manubachoore","ManuBachoore","NL",,0.292421722183577,1,3,0,0,3,1,3,3,0,1.5,,,,,-0.5,
-"FC25","player_brice","Brice","FR",,0.186297020298043,2,3,1,0,4,0.75,4,3,1,1.5,,,,,0.5,
-"FC25","player_levi_de_weerd","Levi de Weerd",,,0.113672195212275,3,2,1,0,3,0.666666666666667,3,2,1,3,,,,,0,
-"FC25","player_guibarros","GuiBarros",,,0.0854409706891387,4,1,1,0,2,0.5,2,1,1,5,,,,,-1,
-"FC25","player_samugamer","Samugamer",,,0.061444429844473,5.5,1,1,0,2,0.5,2,1,1,5,,,,,0.5,
-"FC25","player_tekkz","Tekkz",,,0.061444429844473,5.5,1,1,0,2,0.5,2,1,1,5,,,,,0.5,
-"FC25","player_abumakkah","AbuMakkah",,,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,,,,,0,
-"FC25","player_danipitbull","Danipitbull",,,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,,,,,0,
-"FC25","player_emre_yilmaz","Emre Yilmaz",,,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,,,,,0,
-"FC25","player_jonny","Jonny",,,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,,,,,0,
-"FC25","player_nicolas99fc","nicolas99fc","AR",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,,,,,0,
-"FC25","player_obrun","Obrun2002","IT",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,,,,,0,
-"FC26","player_rvplegend10","RvPLegend10","RO",,0.248399946624643,1,5,0,0,5,1,5,5,0,1,,,,,0,
-"FC26","player_levyfinn","levyfinn","DE",,0.132483910215773,2,3,1,0,4,0.75,4,3,1,2,,,,,0,
-"FC26","player_nassada","Nassada","MA",,0.0732436970485889,3,2,1,0,3,0.666666666666667,3,2,1,4,,,,,-1,
-"FC26","player_bonanno","Bonanno","AR",,0.0716129244409585,4,2,1,0,3,0.666666666666667,3,2,1,4,,,,,0,
-"FC26","player_anders_vejrgang","Vejrgang","DK",,0.0406282448959815,5,2,1,0,3,0.666666666666667,3,2,1,4,,,,,1,
-"FC26","player_alihanlion","Alihanlion",,,0.0387096888870046,7,1,1,0,2,0.5,2,1,1,10,,,,,-3,
-"FC26","player_hhezers","HHezerS",,,0.0387096888870046,7,1,1,0,2,0.5,2,1,1,10,,,,,-3,
-"FC26","player_nicolas99fc","nicolas99fc","AR",,0.0387096888870046,7,1,1,0,2,0.5,2,1,1,10,,,,,-3,
-"FC26","player_abumakkah","AbuMakkah",,,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,1.5,
-"FC26","player_dfernandes","DFernandes",,,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,1.5,
-"FC26","player_milkalove","Milkalove",,,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,1.5,
-"FC26","player_msdossary","Msdossary","SA",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,1.5,
-"FC26","player_paulo_neto","Paulo Neto",,,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,1.5,
-"FC26","player_samugamer","Samugamer",,,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,1.5,
-"FC26","player_chris_de_boer","Chris de Boer",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_emre_yilmaz","Emre Yilmaz",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_gugaferraz","GugaFerraz",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_karimisbak","Karimisbak",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_levi_de_weerd","Levi de Weerd",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_luukwijdeveld","LuukWijdeveld",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_manubachoore","ManuBachoore","NL",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_neat","Neat",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_phzin","PHzin",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FC26","player_umut","Umut","DE",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,0,
-"FIFA18","player_msdossary","Msdossary","SA",,0.574468085106383,1,2,0,0,2,1,2,2,0,1,,,,,0,
-"FIFA18","player_kurt0411","kurt0411",,,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,,,,,0,
-"FIFA18","player_stefanopinna","StefanoPinna","BE",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,,,,,0,
-"FIFA19","player_moauba","MoAuba","DE",,0.574468085106383,1,2,0,0,2,1,2,2,0,1,,,,,0,
-"FIFA19","player_msdossary","Msdossary","SA",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,,,,,0,
-"FIFA19","player_nicolas99fc","nicolas99fc","AR",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,,,,,0,
-"FIFA22","player_umut","Umut","DE",,0.649122807017544,1,1,0,0,1,1,1,1,0,1,,,,,0,
-"FIFA22","player_nicolas99fc","nicolas99fc","AR",,0.350877192982456,2,0,1,0,1,0,1,0,1,2,,,,,0,
-"FIFA23","player_manubachoore","ManuBachoore","NL",,0.470608456514266,1,2,0,0,2,1,2,2,0,1,,,,,0,
-"FIFA23","player_mark11","Mark11",,,0.254382949467171,2,1,1,0,2,0.5,2,1,1,2,,,,,0,
-"FIFA23","player_obrun","Obrun2002","IT",,0.137504297009282,3.5,0,1,0,1,0,1,0,1,3.5,,,,,0,
-"FIFA23","player_phzin","PHzin",,,0.137504297009282,3.5,0,1,0,1,0,1,0,1,3.5,,,,,0,
+"scope","player_id","handle","country","region","pagerank","pagerank_rank","wins","losses","draws","matches_played","win_rate","opponents","opponents_beaten","opponents_lost_to","wins_rank","earnings_usd","earnings_as_of","earnings_measurement","earnings_coverage_status","earnings_source_url","earnings_rank","pagerank_rank_earnings_subset","pagerank_minus_wins_rank","pagerank_minus_earnings_rank"
+"combined","player_shellzz","Shellzz","GB",,0.0994714291849444,1,6,0,0,6,1,6,6,0,2,150258.94,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/38684-xshellzz-shaun-springette",26,1,-1,-25
+"combined","player_rvplegend10","RvPLegend10","RO",,0.080614122856345,2,5,0,0,5,1,5,5,0,5.5,89762.63,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/92729-rvplegend-razvan-puiu",35,2,-3.5,-33
+"combined","player_nassada","Nassada","MA",,0.0511217036868972,3,2,1,0,3,0.666666666666667,3,2,1,27,,,,,,,,-24,
+"combined","player_anders_vejrgang","Vejrgang","DK",,0.0482053006904211,4,5,1,0,6,0.833333333333333,6,5,1,5.5,790987.09,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/111288-anders-vejrgang",2,3,-1.5,1
+"combined","player_ollelito","Ollelito","SE",,0.0471906203947378,5,5,1,0,6,0.833333333333333,6,5,1,5.5,282641.23,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/49937-ollelito-olle-arbin",18,4,-0.5,-14
+"combined","player_mhaywxrd","Mhaywxrd",,,0.0426679037629375,6,4,1,0,5,0.8,5,4,1,9.5,,,,,,,,-3.5,
+"combined","player_tom_leese","Tom Leese","GB",,0.0318851515498084,7,6,1,0,7,0.857142857142857,6,5,1,2,203705.25,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110505-tom-thomas-leese",20,5,5,-15
+"combined","player_manubachoore","ManuBachoore","NL",,0.0308791377876774,8,5,1,0,6,0.833333333333333,6,5,1,5.5,541194.35,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore",7,6,2.5,-1
+"combined","player_marc_marley","MarcMarleyyy",,,0.0270811251618224,9,6,3,0,9,0.666666666666667,7,5,2,2,,,,,,,,7,
+"combined","player_diogo_mendes","Diogo Mendes","PT",,0.0209367512775891,10,4,1,0,5,0.8,5,4,1,9.5,129640.49,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/65821-diogo-mendes",29,7,0.5,-22
+"combined","player_nicolas99fc","nicolas99fc","AR",,0.0177933501990007,11,3,4,0,7,0.428571428571429,7,3,4,15.5,854431.49,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/40762-nicolas99fc-nicolas-villalba",1,8,-4.5,7
+"combined","player_levyfinn","levyfinn","DE",,0.017610901243904,12,3,1,0,4,0.75,4,3,1,15.5,149341.6,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/126099-levyfinn02-levy-finn-rieck",27,9,-3.5,-18
+"combined","player_tekkz","Tekkz","GB",,0.0174868665361823,13,4,4,0,8,0.5,8,4,4,9.5,672494.8,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt",5,10,3.5,5
+"combined","player_dragon","Dragon",,,0.0161739347946286,14,4,2,0,6,0.666666666666667,5,4,2,9.5,,,,,,,,4.5,
+"combined","player_healy","Healy",,,0.0154567488395498,15,3,1,0,4,0.75,4,3,1,15.5,,,,,,,,-0.5,
+"combined","player_msdossary","Msdossary","SA",,0.0137866259408931,16,3,2,0,5,0.6,5,3,2,15.5,724097.02,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/38673-msdossary7-mossad-aldossary",4,11,0.5,7
+"combined","player_moauba","MoAuba","DE",,0.0135239595452357,17,2,0,0,2,1,2,2,0,27,387072.72,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/29449-mo-aubameyang-mohammed-harkous",13,12,-10,-1
+"combined","player_brice","Brice","FR",,0.012800588470028,18,3,1,0,4,0.75,4,3,1,15.5,34765.66,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/126607-brice-masson",42,13,2.5,-29
+"combined","player_guigsey","GuigseyBACK",,,0.0124079904470897,19,2,2,0,4,0.5,3,2,2,27,,,,,,,,-8,
+"combined","player_stokes","Stokes","GB",,0.0116388206662517,20,3,2,0,5,0.6,4,3,2,15.5,148659.8,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/57208-tom-stokes",28,14,4.5,-14
+"combined","player_yuval","Yuval","IL",,0.0110907903989297,21,2,1,0,3,0.666666666666667,3,2,1,27,275541.77,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101822-yuvalbeli-yuval-blizovsky",19,15,-6,-4
+"combined","player_sean_flossy","Sean Flossy",,,0.0109394935062685,22,3,2,0,5,0.6,4,2,2,15.5,,,,,,,,6.5,
+"combined","player_damie","Damie","PL",,0.0107348816517729,23,2,1,0,3,0.666666666666667,3,2,1,27,114173.94,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/48639-damie-damian-augustyniak",31,16,-4,-15
+"combined","player_ethxnh","EthxnH","GB",,0.0107152990198705,24,2,2,0,4,0.5,3,1,2,27,182659.46,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/87667-ethxnh-ethan-higgins",22,17,-3,-5
+"combined","player_stingrayjnr","Stingrayjnr","GB",,0.0105866966611085,25,2,2,0,4,0.5,3,1,2,27,162304.81,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110316-stingray-dan-ray",25,18,-2,-7
+"combined","player_cosmin","Cosmin",,,0.0105361497446967,26,3,2,0,5,0.6,5,3,2,15.5,,,,,,,,10.5,
+"combined","player_alihanlion","Alihanlion",,,0.00999044936139365,27,1,1,0,2,0.5,2,1,1,45,,,,,,,,-18,
+"combined","player_bonanno","Bonanno","AR",,0.00961633340863139,28,2,2,0,4,0.5,4,2,2,27,473824.97,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101789-matias-matias-bonanno",8,19,1,11
+"combined","player_jas","Jas1875",,,0.00958710559982183,29,2,2,0,4,0.5,4,2,2,27,,,,,,,,2,
+"combined","player_kyle_hammond","Hammond",,,0.00883509127198078,30,2,3,0,5,0.4,5,2,3,27,,,,,,,,3,
+"combined","player_jayden_groden","Jayden","GB",,0.00883005538622546,31,1,2,0,3,0.333333333333333,2,1,2,45,38645.23,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101748-jayden-groden",40,20,-14,-20
+"combined","player_levi_de_weerd","Levi de Weerd","NL",,0.00820101974910062,32,2,2,0,4,0.5,4,2,2,27,375382.94,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/85333-levi-de-weerd",14,21,5,7
+"combined","player_fully","Fully",,,0.00803734401976713,33,2,2,0,4,0.5,3,2,1,27,,,,,,,,6,
+"combined","player_cameron_willey","Cameron Willey",,,0.00788604712710592,34.5,2,2,0,4,0.5,3,2,1,27,,,,,,,,7.5,
+"combined","player_ryan_pessoa","Ryan Pessoa",,,0.00788604712710592,34.5,2,2,0,4,0.5,4,2,2,27,,,,,,,,7.5,
+"combined","player_umut","Umut","DE",,0.00766464352035613,36,1,1,0,2,0.5,2,1,1,45,756907.63,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/76888-umut-gultekin",3,22,-9,19
+"combined","player_guibarros","GuiBarros","BR",,0.00759951574200722,37,1,1,0,2,0.5,2,1,1,45,64662.76,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130311-guibarros-guilherme-barros",37,23,-8,-14
+"combined","player_samugamer","Samugamer","IT",,0.0075696990788143,38,2,2,0,4,0.5,4,2,2,27,2000,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/141296-samugamer-07-samuele-prestigiacomo",48,24,11,-24
+"combined","player_dfernandes","DFernandes","PT",,0.00736898999643624,39,1,1,0,2,0.5,2,1,1,45,74564.17,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130074-dfernandes-daniel-fernandes",36,25,-6,-11
+"combined","player_abumakkah","AbuMakkah","SA",,0.00718457971567668,41.5,1,3,0,4,0.25,4,1,3,45,292583.33,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/126557-abomakkah-ahmad-mujahid",17,27,-3.5,10
+"combined","player_jafonso","Jafonso","PT",,0.00718457971567668,41.5,1,1,0,2,0.5,2,1,1,45,,,,,,,,-3.5,
+"combined","player_milkalove","Milkalove","DE",,0.00718457971567668,41.5,1,1,0,2,0.5,2,1,1,45,4710.34,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130050-milkalove-justin-springer",47,27,-3.5,-20
+"combined","player_paulo_neto","Paulo Neto","BR",,0.00718457971567668,41.5,1,1,0,2,0.5,2,1,1,45,404560.06,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/61473-paulo-neto",10,27,-3.5,17
+"combined","player_unsal","Unsal",,,0.00623553557080182,44,1,2,0,3,0.333333333333333,3,1,2,45,,,,,,,,-1,
+"combined","player_hhezers","HHezerS","IT",,0.0059191875225102,45.5,1,2,0,3,0.333333333333333,3,1,2,45,169970.78,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/93973-hhezers-lucio-vecchione",23,29.5,0.5,6.5
+"combined","player_xcharifx","xcharifx","MA",,0.0059191875225102,45.5,1,1,0,2,0.5,2,1,1,45,91500,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130345-xcharifx-youssef-charif",34,29.5,0.5,-4.5
+"combined","player_ashy","Ashy",,,0.00553406815937258,51,1,2,0,3,0.333333333333333,3,1,2,45,,,,,,,,6,
+"combined","player_danny_taylor","Danny Taylor",,,0.00553406815937258,51,1,2,0,3,0.333333333333333,2,1,1,45,,,,,,,,6,
+"combined","player_harry_hesketh","Harry Hesketh",,,0.00553406815937258,51,1,2,0,3,0.333333333333333,3,1,2,45,,,,,,,,6,
+"combined","player_mark11","Mark11","AU",,0.00553406815937258,51,1,1,0,2,0.5,2,1,1,45,330391.17,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101845-mark11-mark-zakhary",15,32,6,17
+"combined","player_michael_fisher","Michael Fisher",,,0.00553406815937258,51,1,2,0,3,0.333333333333333,3,1,2,45,,,,,,,,6,
+"combined","player_niksneb","NiKSNEB","GB",,0.00553406815937258,51,1,2,0,3,0.333333333333333,3,1,2,45,115182.93,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101750-niksneb-jacob-benskin",30,32,6,2
+"combined","player_redlac","RedLac",,,0.00553406815937258,51,1,2,0,3,0.333333333333333,3,1,2,45,,,,,,,,6,
+"combined","player_royal_funky","Royal Funky",,,0.00553406815937258,51,1,2,0,3,0.333333333333333,2,1,1,45,,,,,,,,6,
+"combined","player_tass","Tass","GB",,0.00553406815937258,51,1,2,0,3,0.333333333333333,3,1,2,45,59438,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/10735-tass-tassal-rushan",38,32,6,-6
+"combined","player_alfie_roe","Alfie Roe",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_callum","Callum",,,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,,,,,,,,0,
+"combined","player_chris_de_boer","Chris de Boer","NL",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,10605.62,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/136714-chrisdeboer-chris-de-boer",46,41,0,-5
+"combined","player_danipitbull","Danipitbull","IT",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,95864.45,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101765-danipitbull-danilo-pinto",33,41,0,8
+"combined","player_emre_yilmaz","Emre Yilmaz","NL",,0.00388355660306847,68.5,0,3,0,3,0,3,0,3,68.5,397149.98,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110314-emreyilmaz-emre-yilmaz",12,41,0,29
+"combined","player_gorilla","Gorilla","GB",,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,404021.96,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/16759-hugegorilla-spencer-ealing",11,41,0,30
+"combined","player_gugaferraz","GugaFerraz","BR",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,12000,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/160460-gugaferraz-gustavo-ferraz",44,41,0,-3
+"combined","player_h1thegoat","H1TheGoat",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_hashtag_shawrey","Hashtag Shawrey","GB",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,15404.24,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/57103-shawrey-alex-shaw",43,41,0,-2
+"combined","player_jamboo","Jamboo",,,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,,,,,,,,0,
+"combined","player_jonny","Jonny","DE",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,196150.24,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130048-jonny-jonas-wirth",21,41,0,20
+"combined","player_k1john","K1John","EG",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,98250,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130075-k1john-john-mouneer",32,41,0,9
+"combined","player_karimisbak","Karimisbak","IT",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,36097.24,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/93292-karimisback-karim-rmaiti",41,41,0,0
+"combined","player_kurt0411","kurt0411","MT",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,48250,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46922-kurt0411-kurt-fenech",39,41,0,2
+"combined","player_luca_schilder","Luca Schilder",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_luukwijdeveld","LuukWijdeveld",,,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,,,,,,,,0,
+"combined","player_mp9mike","MP9Mike",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_neat","Neat","ES",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,408545.17,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/88199-neat-ander-tobal",9,41,0,32
+"combined","player_obrun","Obrun2002","IT",,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,310295.46,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/85112-obrun2002-francesco-tagliafierro",16,41,0,25
+"combined","player_painter","Painter",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_papsity","Papsity",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_phzin","PHzin","BR",,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,635235.02,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/76886-phzin-paulo-henrique-chaves",6,41,0,35
+"combined","player_planettoast","PlanetToast",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_salman_ahmad","Salman Ahmad",,,0.00388355660306847,68.5,0,2,0,2,0,2,0,2,68.5,,,,,,,,0,
+"combined","player_stefanopinna","StefanoPinna","BE",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,167577.87,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46731-stefanopinna-stefano-pinna",24,41,0,17
+"combined","player_venny","Venny","GB",,0.00388355660306847,68.5,0,1,0,1,0,1,0,1,68.5,11940.12,"2026-11-06","provider_recorded_career_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/57203-venny-owen-venn",45,41,0,-4
+"FC24","player_anders_vejrgang","Vejrgang","DK",,0.362758087271634,1,3,0,0,3,1,3,3,0,1,417632.37,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/111288-anders-vejrgang",1,1,0,0
+"FC24","player_yuval","Yuval","IL",,0.196085452579261,2,2,1,0,3,0.666666666666667,3,2,1,2,163090.38,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101822-yuvalbeli-yuval-blizovsky",4,2,0,-2
+"FC24","player_jafonso","Jafonso","PT",,0.10599213652933,3.5,1,1,0,2,0.5,2,1,1,3.5,,,,,,,,0,
+"FC24","player_xcharifx","xcharifx","MA",,0.10599213652933,3.5,1,1,0,2,0.5,2,1,1,3.5,75000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130345-xcharifx-youssef-charif",5,3,0,-2
+"FC24","player_abumakkah","AbuMakkah","SA",,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,170000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/126557-abomakkah-ahmad-mujahid",3,5.5,0,2.5
+"FC24","player_emre_yilmaz","Emre Yilmaz","NL",,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,170899.98,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110314-emreyilmaz-emre-yilmaz",2,5.5,0,3.5
+"FC24","player_hhezers","HHezerS","IT",,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,44000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/93973-hhezers-lucio-vecchione",7,5.5,0,-1.5
+"FC24","player_k1john","K1John","EG",,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,52250,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130075-k1john-john-mouneer",6,5.5,0,-0.5
+"FC25","player_manubachoore","ManuBachoore","NL",,0.292421722183577,1,3,0,0,3,1,3,3,0,1.5,21000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore",6,1,-0.5,-5
+"FC25","player_brice","Brice","FR",,0.186297020298043,2,3,1,0,4,0.75,4,3,1,1.5,10000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/126607-brice-masson",8,2,0.5,-6
+"FC25","player_levi_de_weerd","Levi de Weerd","NL",,0.113672195212275,3,2,1,0,3,0.666666666666667,3,2,1,3,35000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/85333-levi-de-weerd",3,3,0,0
+"FC25","player_guibarros","GuiBarros","BR",,0.0854409706891387,4,1,1,0,2,0.5,2,1,1,5,12500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130311-guibarros-guilherme-barros",7,4,-1,-3
+"FC25","player_samugamer","Samugamer","IT",,0.061444429844473,5.5,1,1,0,2,0.5,2,1,1,5,,,,,,,,0.5,
+"FC25","player_tekkz","Tekkz","GB",,0.061444429844473,5.5,1,1,0,2,0.5,2,1,1,5,9000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt",9,5,0.5,-4
+"FC25","player_abumakkah","AbuMakkah","SA",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,35000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/126557-abomakkah-ahmad-mujahid",3,8.5,0,5.5
+"FC25","player_danipitbull","Danipitbull","IT",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,1000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101765-danipitbull-danilo-pinto",11,8.5,0,-2.5
+"FC25","player_emre_yilmaz","Emre Yilmaz","NL",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,22500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110314-emreyilmaz-emre-yilmaz",5,8.5,0,3.5
+"FC25","player_jonny","Jonny","DE",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,6500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/130048-jonny-jonas-wirth",10,8.5,0,-1.5
+"FC25","player_nicolas99fc","nicolas99fc","AR",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,35000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/40762-nicolas99fc-nicolas-villalba",3,8.5,0,5.5
+"FC25","player_obrun","Obrun2002","IT",,0.0332132053213367,9.5,0,1,0,1,0,1,0,1,9.5,68500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/85112-obrun2002-francesco-tagliafierro",1,8.5,0,7.5
+"FC26","player_rvplegend10","RvPLegend10","RO",,0.248399946624643,1,5,0,0,5,1,5,5,0,1,,,,,,,,0,
+"FC26","player_levyfinn","levyfinn","DE",,0.132483910215773,2,3,1,0,4,0.75,4,3,1,2,,,,,,,,0,
+"FC26","player_nassada","Nassada","MA",,0.0732436970485889,3,2,1,0,3,0.666666666666667,3,2,1,4,,,,,,,,-1,
+"FC26","player_bonanno","Bonanno","AR",,0.0716129244409585,4,2,1,0,3,0.666666666666667,3,2,1,4,,,,,,,,0,
+"FC26","player_anders_vejrgang","Vejrgang","DK",,0.0406282448959815,5,2,1,0,3,0.666666666666667,3,2,1,4,,,,,,,,1,
+"FC26","player_alihanlion","Alihanlion",,,0.0387096888870046,7,1,1,0,2,0.5,2,1,1,10,,,,,,,,-3,
+"FC26","player_hhezers","HHezerS","IT",,0.0387096888870046,7,1,1,0,2,0.5,2,1,1,10,,,,,,,,-3,
+"FC26","player_nicolas99fc","nicolas99fc","AR",,0.0387096888870046,7,1,1,0,2,0.5,2,1,1,10,3000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/40762-nicolas99fc-nicolas-villalba",4,1,-3,-3
+"FC26","player_abumakkah","AbuMakkah","SA",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,,,,1.5,
+"FC26","player_dfernandes","DFernandes","PT",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,,,,1.5,
+"FC26","player_milkalove","Milkalove","DE",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,,,,1.5,
+"FC26","player_msdossary","Msdossary","SA",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,,,,1.5,
+"FC26","player_paulo_neto","Paulo Neto","BR",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,35000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/61473-paulo-neto",1,2,1.5,1
+"FC26","player_samugamer","Samugamer","IT",,0.0278378715028021,11.5,1,1,0,2,0.5,2,1,1,10,,,,,,,,1.5,
+"FC26","player_chris_de_boer","Chris de Boer","NL",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_emre_yilmaz","Emre Yilmaz","NL",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_gugaferraz","GugaFerraz","BR",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,12000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/160460-gugaferraz-gustavo-ferraz",3,3.5,0,0.5
+"FC26","player_karimisbak","Karimisbak","IT",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_levi_de_weerd","Levi de Weerd","NL",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_luukwijdeveld","LuukWijdeveld",,,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_manubachoore","ManuBachoore","NL",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_neat","Neat","ES",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FC26","player_phzin","PHzin","BR",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,25000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/76886-phzin-paulo-henrique-chaves",2,3.5,0,1.5
+"FC26","player_umut","Umut","DE",,0.0150474981096228,19.5,0,1,0,1,0,1,0,1,19.5,,,,,,,,0,
+"FIFA18","player_msdossary","Msdossary","SA",,0.574468085106383,1,2,0,0,2,1,2,2,0,1,284500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/38673-msdossary7-mossad-aldossary",1,1,0,0
+"FIFA18","player_kurt0411","kurt0411","MT",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,37500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46922-kurt0411-kurt-fenech",3,2.5,0,-0.5
+"FIFA18","player_stefanopinna","StefanoPinna","BE",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,69000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46731-stefanopinna-stefano-pinna",2,2.5,0,0.5
+"FIFA19","player_moauba","MoAuba","DE",,0.574468085106383,1,2,0,0,2,1,2,2,0,1,288553.3,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/29449-mo-aubameyang-mohammed-harkous",1,1,0,0
+"FIFA19","player_msdossary","Msdossary","SA",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,210865,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/38673-msdossary7-mossad-aldossary",3,2.5,0,-0.5
+"FIFA19","player_nicolas99fc","nicolas99fc","AR",,0.212765957446809,2.5,0,1,0,1,0,1,0,1,2.5,221625,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/40762-nicolas99fc-nicolas-villalba",2,2.5,0,0.5
+"FIFA20","player_tom_leese","Tom Leese","GB",,0.362758087271633,1,3,0,0,3,1,3,3,0,1,82436.8,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110505-tom-thomas-leese",2,1,0,-1
+"FIFA20","player_marc_marley","MarcMarleyyy",,,0.196085452579261,2,2,1,0,3,0.666666666666667,3,2,1,2,,,,,,,,0,
+"FIFA20","player_kyle_hammond","Hammond",,,0.10599213652933,3.5,1,1,0,2,0.5,2,1,1,3.5,,,,,,,,0,
+"FIFA20","player_tekkz","Tekkz","GB",,0.10599213652933,3.5,1,1,0,2,0.5,2,1,1,3.5,148205.56,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt",1,2,0,1
+"FIFA20","player_callum","Callum",,,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,,,,,,,,0,
+"FIFA20","player_hashtag_shawrey","Hashtag Shawrey","GB",,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,5448.56,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/57103-shawrey-alex-shaw",3,3.5,0,0.5
+"FIFA20","player_jamboo","Jamboo",,,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,,,,,,,,0,
+"FIFA20","player_venny","Venny","GB",,0.057293046772611,6.5,0,1,0,1,0,1,0,1,6.5,1840.12,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/57203-venny-owen-venn",4,3.5,0,-0.5
+"FIFA21","player_shellzz","Shellzz","GB",,0.186528116911783,1,6,0,0,6,1,6,6,0,1,27497.2,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/38684-xshellzz-shaun-springette",4,1,0,-3
+"FIFA21","player_ollelito","Ollelito","SE",,0.100640929998243,2,5,1,0,6,0.833333333333333,6,5,1,2,33804.16,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/49937-ollelito-olle-arbin",2,2,0,0
+"FIFA21","player_mhaywxrd","Mhaywxrd",,,0.0633290463795197,3,4,1,0,5,0.8,5,4,1,4.5,,,,,,,,-1.5,
+"FIFA21","player_diogo_mendes","Diogo Mendes","PT",,0.0472892459589668,4,4,1,0,5,0.8,5,4,1,4.5,17429.86,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/65821-diogo-mendes",6,3,-0.5,-3
+"FIFA21","player_dragon","Dragon",,,0.0455456994153412,5,4,2,0,6,0.666666666666667,5,4,2,4.5,,,,,,,,0.5,
+"FIFA21","player_marc_marley","MarcMarleyyy",,,0.0398524461248812,6,4,2,0,6,0.666666666666667,5,3,2,4.5,,,,,,,,1.5,
+"FIFA21","player_tom_leese","Tom Leese","GB",,0.0382594708991996,7,3,1,0,4,0.75,4,3,1,9,53555.56,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110505-tom-thomas-leese",1,4,-2,3
+"FIFA21","player_healy","Healy",,,0.0331250212865801,8,3,1,0,4,0.75,4,3,1,9,,,,,,,,-1,
+"FIFA21","player_guigsey","GuigseyBACK",,,0.0303489767917549,9,2,2,0,4,0.5,3,2,2,16,,,,,,,,-7,
+"FIFA21","player_stokes","Stokes","GB",,0.0231176320679717,10,3,2,0,5,0.6,4,3,2,9,1250,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/57208-tom-stokes",10,5,1,-5
+"FIFA21","player_sean_flossy","Sean Flossy",,,0.0217285920231749,11,3,2,0,5,0.6,4,2,2,9,,,,,,,,2,
+"FIFA21","player_tekkz","Tekkz","GB",,0.0216199972738246,12,2,1,0,3,0.666666666666667,3,2,1,16,5805.56,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt",7,6,-4,-1
+"FIFA21","player_damie","Damie","PL",,0.0213221812961251,13,2,1,0,3,0.666666666666667,3,2,1,16,,,,,,,,-3,
+"FIFA21","player_ethxnh","EthxnH","GB",,0.0210278485462349,14.5,2,2,0,4,0.5,3,1,2,16,30000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/87667-ethxnh-ethan-higgins",3,7,-1.5,4
+"FIFA21","player_stingrayjnr","Stingrayjnr","GB",,0.0210278485462349,14.5,2,2,0,4,0.5,3,1,2,16,,,,,,,,-1.5,
+"FIFA21","player_cosmin","Cosmin",,,0.0209274496270242,16,3,2,0,5,0.6,5,3,2,9,,,,,,,,7,
+"FIFA21","player_jas","Jas1875",,,0.019042408694905,17,2,2,0,4,0.5,4,2,2,16,,,,,,,,1,
+"FIFA21","player_jayden_groden","Jayden","GB",,0.0175387161132634,18,1,2,0,3,0.333333333333333,2,1,2,26,27125,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101748-jayden-groden",5,8,-8,3
+"FIFA21","player_cameron_willey","Cameron Willey",,,0.0156636777198348,20,2,2,0,4,0.5,3,2,1,16,,,,,,,,4,
+"FIFA21","player_fully","Fully",,,0.0156636777198348,20,2,2,0,4,0.5,3,2,1,16,,,,,,,,4,
+"FIFA21","player_ryan_pessoa","Ryan Pessoa",,,0.0156636777198348,20,2,2,0,4,0.5,4,2,2,16,,,,,,,,4,
+"FIFA21","player_unsal","Unsal",,,0.0123853456639752,22,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,-4,
+"FIFA21","player_ashy","Ashy",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,1,
+"FIFA21","player_danny_taylor","Danny Taylor",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,2,1,1,26,,,,,,,,1,
+"FIFA21","player_harry_hesketh","Harry Hesketh",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,1,
+"FIFA21","player_kyle_hammond","Hammond",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,1,
+"FIFA21","player_michael_fisher","Michael Fisher",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,1,
+"FIFA21","player_niksneb","NiKSNEB","GB",,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,4500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101750-niksneb-jacob-benskin",9,9,1,0
+"FIFA21","player_redlac","RedLac",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,1,
+"FIFA21","player_royal_funky","Royal Funky",,,0.0109920545402349,27,1,2,0,3,0.333333333333333,2,1,1,26,,,,,,,,1,
+"FIFA21","player_tass","Tass","GB",,0.0109920545402349,27,1,2,0,3,0.333333333333333,3,1,2,26,,,,,,,,1,
+"FIFA21","player_alfie_roe","Alfie Roe",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_gorilla","Gorilla","GB",,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,5000,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/16759-hugegorilla-spencer-ealing",8,10,0,2
+"FIFA21","player_h1thegoat","H1TheGoat",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_luca_schilder","Luca Schilder",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_mp9mike","MP9Mike",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_painter","Painter",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_papsity","Papsity",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_planettoast","PlanetToast",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA21","player_salman_ahmad","Salman Ahmad",,,0.00771372248437539,36,0,2,0,2,0,2,0,2,36,,,,,,,,0,
+"FIFA22","player_umut","Umut","DE",,0.41213258286429,1,1,0,0,1,1,1,1,0,2,306001.33,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/76888-umut-gultekin",1,1,-1,0
+"FIFA22","player_nicolas99fc","nicolas99fc","AR",,0.337711069418387,2,2,1,0,3,0.666666666666667,3,2,1,1,212812.5,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/40762-nicolas99fc-nicolas-villalba",2,2,1,0
+"FIFA22","player_bonanno","Bonanno","AR",,0.125078173858662,3.5,0,1,0,1,0,1,0,1,3.5,181089.93,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101789-matias-matias-bonanno",3,3.5,0,0.5
+"FIFA22","player_tekkz","Tekkz","GB",,0.125078173858662,3.5,0,1,0,1,0,1,0,1,3.5,86020.83,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/46805-tekkz-donovan-hunt",4,3.5,0,-0.5
+"FIFA23","player_manubachoore","ManuBachoore","NL",,0.470608456514266,1,2,0,0,2,1,2,2,0,1,370656.98,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore",1,1,0,0
+"FIFA23","player_mark11","Mark11","AU",,0.254382949467171,2,1,1,0,2,0.5,2,1,1,2,191328.67,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/101845-mark11-mark-zakhary",3,2,0,-1
+"FIFA23","player_obrun","Obrun2002","IT",,0.137504297009282,3.5,0,1,0,1,0,1,0,1,3.5,140545.46,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/85112-obrun2002-francesco-tagliafierro",4,3.5,0,-0.5
+"FIFA23","player_phzin","PHzin","BR",,0.137504297009282,3.5,0,1,0,1,0,1,0,1,3.5,239500,"2026-11-06","provider_recorded_edition_total","provider_recorded_incomplete","https://www.esportsearnings.com/players/76886-phzin-paulo-henrique-chaves",2,3.5,0,1.5

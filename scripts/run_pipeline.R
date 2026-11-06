@@ -8,7 +8,7 @@ value <- function(key, fallback) {
 known <- c("--input-dir=","--output-dir=","--cutoff=")
 if (length(args) && any(!vapply(args,function(a) any(startsWith(a,known)),logical(1))))
   stop("Usage: Rscript scripts/run_pipeline.R [--input-dir=DIR] [--output-dir=DIR] [--cutoff=YYYY-MM-DD]")
-source("config/project.R"); source("R/data.R"); source("R/analysis.R"); source("R/report.R")
+source("config/project.R"); source("R/data.R"); source("R/analysis.R"); source("R/report.R"); source("R/metadata.R"); source("R/status.R")
 cutoff_text <- value("--cutoff",as.character(project_config$cutoff))
 cutoff <- as.Date(cutoff_text,format="%Y-%m-%d")
 if (is.na(cutoff) || format(cutoff,"%Y-%m-%d") != cutoff_text) stop("Invalid cutoff; use YYYY-MM-DD")
@@ -23,7 +23,12 @@ if (public) {
   m <- read_project_csv(paths[1],names(read.csv("data/examples/matches.csv"))[1:14])
   p <- read_project_csv(paths[2],names(read.csv("data/examples/players.csv")))
   e <- read_project_csv(paths[3],names(read.csv("data/examples/earnings.csv")))
-  inputs <- validate_inputs(m,p,e,cutoff,project_config$editions)
+  metadata_paths <- file.path("data/raw",c("tournaments.csv","profile_attributes.csv"))
+  read_optional <- function(path) if(file.exists(path)) read.csv(path,colClasses="character",na.strings=c("","NA")) else NULL
+  enriched <- enrich_metadata(m,p,read_optional(metadata_paths[1]),read_optional(metadata_paths[2]),cutoff)
+  inputs <- validate_inputs(enriched$matches,enriched$players,e,cutoff,project_config$editions)
+  inputs$issues <- rbind(inputs$issues,enriched$issues)
+  paths <- c(paths,metadata_paths[file.exists(metadata_paths)])
 } else {
   paths <- file.path(input_dir,c("matches.csv","players.csv","earnings.csv"))
   inputs <- load_inputs(input_dir,cutoff,project_config$editions)
@@ -45,17 +50,22 @@ for (scope in names(a$graphs)) for (kind in c("win","played")) {
 }
 major <- inputs$matches[which(inputs$matches$tier %in% project_config$major_tiers),,drop=FALSE]
 major_dir <- file.path(out,"major-tier-sensitivity");dir.create(major_dir,showWarnings=FALSE)
-unlink(file.path(major_dir,c("metrics.csv","rankings.csv","correlations.csv")))
+unlink(file.path(major_dir,c("metrics.csv","rankings.csv","correlations.csv","rank-comparison.csv","rank-correlations.csv")))
 if (nrow(major)) {
   s <- analyze_networks(major,inputs$players,inputs$earnings,cutoff)
   for (name in c("metrics","rankings","correlations"))
     utils::write.csv(s[[name]],file.path(major_dir,paste0(name,".csv")),row.names=FALSE,na="")
-  sensitivity_status <- if (nrow(major)==nrow(inputs$matches)) "All rows have major-tier labels, so filtering cannot assess lower-tier coverage." else "Major-tier subset exported; inspect its coverage before comparing ranks."
-} else sensitivity_status <- "Unavailable: no verified provider tier classifications."
+  comparison <- compare_sensitivity(a,s)
+  utils::write.csv(comparison$ranks,file.path(major_dir,"rank-comparison.csv"),row.names=FALSE,na="")
+  utils::write.csv(comparison$correlations,file.path(major_dir,"rank-correlations.csv"),row.names=FALSE,na="")
+  sensitivity_status <- if (nrow(major)==nrow(inputs$matches)) "All observed fixtures are world/major events; no domestic-event contrast is available." else paste0("World/major subset exported with common-player rank comparisons (",nrow(major)," of ",nrow(inputs$matches)," fixtures retained).")
+} else sensitivity_status <- "No reviewed event-scope classification is available for a world/major subset."
 utils::write.csv(data.frame(status=sensitivity_status),file.path(major_dir,"status.csv"),row.names=FALSE)
+availability <- coverage_summary(inputs,a,project_config$editions)
+utils::write.csv(availability,file.path(out,"availability.csv"),row.names=FALSE,na="")
 write_figures(a,file.path(out,"figures"))
 write_midproject_report(a,inputs,cutoff,project_config$editions,report,
-  if (public) "checked-in public cohort" else "user-supplied canonical CSVs",sensitivity_status)
+  if (public) "checked-in public cohort" else "user-supplied canonical CSVs",sensitivity_status,availability)
 manifest <- data.frame(key=c("cutoff","input_mode","R","igraph","jsonlite",paste0("md5:",basename(paths))),
   value=c(as.character(cutoff),if(public)"public" else "custom",R.version.string,
     as.character(packageVersion("igraph")),as.character(packageVersion("jsonlite")),unname(tools::md5sum(paths))))
