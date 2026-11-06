@@ -4,7 +4,7 @@ Network Science Progress Report  6 November 2026
 
 Group members: Frank Williams and AbdulHaady Oludare
 
-Private repository: [github.com/frankwilz/fifa-head-to-head](https://github.com/frankwilz/fifa-head-to-head)
+Project repository: [github.com/frankwilz/fifa-head-to-head](https://github.com/frankwilz/fifa-head-to-head)
 
 ## 1 Work completed
 
@@ -59,4 +59,4 @@ Essential outstanding work is to expand and audit match coverage, resolve remain
 
 [4] Esports Earnings. Player-profile snapshots retrieved November 6, 2026; examples: [Vejrgang](https://www.esportsearnings.com/players/111288-anders-vejrgang) and [ManuBachoore](https://www.esportsearnings.com/players/110315-manubachoore-manuel-bachoore).
 
-Repository evidence: [R scripts](https://github.com/frankwilz/fifa-head-to-head/tree/main/R) | [clean CSVs](https://github.com/frankwilz/fifa-head-to-head/tree/main/data/clean) | [metrics and rankings](https://github.com/frankwilz/fifa-head-to-head/tree/main/results) | [full figures](https://github.com/frankwilz/fifa-head-to-head/tree/main/results/figures). The repository is private; reviewer access is required.
+Repository evidence: [R scripts](https://github.com/frankwilz/fifa-head-to-head/tree/main/R) | [clean CSVs](https://github.com/frankwilz/fifa-head-to-head/tree/main/data/clean) | [metrics and rankings](https://github.com/frankwilz/fifa-head-to-head/tree/main/results) | [full figures](https://github.com/frankwilz/fifa-head-to-head/tree/main/results/figures). The public repository can be opened without signing in.

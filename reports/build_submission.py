@@ -135,7 +135,7 @@ def markdown(data):
     lines = ['# ' + data['title'], '', data['subtitle'] + '  ' + data['date'], '',
              'Group members: ' + ' and '.join(data['authors']), '']
     if 'repository' in data:
-        repo=data['repository'];lines.extend(['Private repository: ['+repo['text']+']('+repo['url']+')',''])
+        repo=data['repository'];lines.extend(['Project repository: ['+repo['text']+']('+repo['url']+')',''])
     for page in data['pages']:
         for block in page:
             kind=block['type']
@@ -191,7 +191,7 @@ def main():
     p=doc.add_paragraph('Group members: ' + ' and '.join(authors));p.paragraph_format.space_after=Pt(6)
     for run in p.runs:run.font.size=Pt(10.5)
     if 'repository' in data:
-        p=doc.add_paragraph(style='Report Note');p.add_run('Private repository: ')
+        p=doc.add_paragraph(style='Report Note');p.add_run('Project repository: ')
         add_hyperlink(p,data['repository']['text'],data['repository']['url'])
     for page_index,page in enumerate(data['pages']):
         for block_index,block in enumerate(page):
